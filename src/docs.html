@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Wunderlist - Developer</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/css/essentials.min.css">
+    <link rel="stylesheet" href="/css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <%= render 'developer/menu.html' %>
+    <div class="container py4 px2 clearfix dark-gray border-box">
+      <div class="col col-3 sticky">
+        <%= render 'developer/sidebar.html' %>
+      </div>
+      <div class="col col-9">
+        <h2 class="mt0 lighter">Documentation</h2>
+        <p>The Wunderlist API provides REST-based storage and synchronization of a user’s lists across multiple platforms and devices. The primary things you’ll need to use it are an understanding of our data model, how we <a href="#">version individual entities</a> in a user’s data, the <a href="#">formats we use for transmission</a>, and a set of <a href="#">OAuth credentials</a>.</p>
+
+        <h3>Support</h3>
+        <p>Please submit questions about the Wunderlist API to <a href="#">Stack Overflow</a> with the tag <a href="#">'wunderlist'</a>. We will be monitoring Stack Overflow for questions about the Wunderlist API closely. You may also reach us at <a href="#">api@wunderlist.com</a> if you need help.</p>
+
+        <h3>Example</h3>
+        <p>In our examples, we attempt to give you straightforward way to experiement with the API. In the snippets we provide, you’ll see several potential placeholders. For example:</p>
+        <pre class="blue"><code>curl -H "X-Authorization-Token: AUTHORIZATION_TOKEN"</code></pre>
+        <p>We want to eventually make these live, but that’s in the future.</p>
+
+        <h3>Compatibility</h3>
+        <p>This API will evolve rapidly and future versions will add new endpoints and parameters. To provide a sane experienece, the API is versioned. Within a version, the behavior and return values of the API will not change from currently documented behavior and return values. As well, the API and its data payloads are designed so that new parameters and return values can be added at any time.</p>
+        <p>To provide the best experience, a well-behaved Wunderlist API client must not send undocumented parameters as part of their request. These parameters could collide with a future version of the API. As well, a Wunderlist API client must accept and ignore any additional keys that it doesn’t handle in a response.</p>
+
+        <h3>Security</h3>
+        <p>It should go without saying, but all requests must be made using a secure connection. We support a minimum of TLS 1.0.</p>
+      </div>
+    </div>
+    <%= render 'developer/footer.html' %>
+    <script src="/js/app.min.js"></script>
+  </body>
+</html>
