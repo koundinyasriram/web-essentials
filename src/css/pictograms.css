@@ -28,12 +28,18 @@
   font-family: 'Wundercon';
   font-weight: 300;
   min-width: 1em;
+  height: 1em;
   line-height: 1em;
   font-size: 20px;
+  display: inline-block;
 }
 
 .wundercon.small {
   font-size: 1rem;
+}
+
+.wundercon.big {
+  font-size: 2.75rem;
 }
 
 <% $data[:pictograms].each do |row| %>
