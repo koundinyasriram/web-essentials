@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Wunderlist - Developer</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/css/essentials.min.css">
+    <link rel="stylesheet" href="/css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <%= render 'developer/menu.html' %>
+    <header class="full-width bg-full-white dark-gray border-bottom page-header">
+      <div class="container py4 border-box clearfix">
+        <div class="font-size-0">
+          <div class="col-inline col-10 border-box">
+            <h2 class="m0 lighter line-height-1">Manage Apps</h2>
+          </div>
+          <div class="col-inline col-2">
+            <a class="button center block">New App</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="full-width bg-white">
+      <div class="container py3">
+        <ul class="list-reset">
+          <li class="px2 border-box border-bottom">
+            <div class="clearfix py2 ">
+              <div class="col center col-3 line-height-0">
+                <img class="rounded" width="120" height="120" src="http://a1.mzstatic.com/us/r30/Purple3/v4/42/47/07/42470769-538f-5acd-1ea3-cf5739cf610d/icon512.png">
+              </div>
+              <div class="col right col-9 vt">
+                <h3 class="m0 mb1">Sunrise Calendar</h3>
+                <p class="mb0 mr4">Sunrise is a free calendar app made for Google Calendar, iCloud and Exchange. Available on Desktop, iPhone, iPad and Android.</p>
+                <div class="py2 clearfix">
+                  <div class="col col-7">
+                    <label class="h6 caps bold block">App Id</label>
+                    <input class="field-light full-width px2" placeholder="" value="346e1819b3648906071c" disabled></input>
+                  </div>
+                  <div class="col col-12 mt1">
+                    <label class="h6 caps bold block">App Secret</label>
+                    <input class="field-light full-width px2" placeholder="" value="1750351f06ab73bd6ea9e43c421fdcbf1c6df36e5113ab51a26b60c4ac8f" disabled></input>
+                  </div>
+                  <div class="col col-7 mt1">
+                    <label class="h6 caps bold block">App Url</label>
+                    <input class="field-light blue full-width px2" placeholder="" value="http://sunriseapp.com/" disabled></input>
+                  </div>
+                  <div class="col col-7 mt1">
+                    <label class="h6 caps bold block">Authorization Callback Url</label>
+                    <input class="field-light blue full-width px2" placeholder="" value="http://sunriseapp.com/auth/wunderlist/callback" disabled></input>
+                  </div>
+                  <div class="col col-12 mt3">
+                    <a class="button px3 inline-block center white">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+    <%= render 'developer/footer.html' %>
+    <script src="/js/app.min.js"></script>
+  </body>
+</html>
