@@ -151,19 +151,33 @@
 
     <div class="container mt4 left-align">
       <h3>Documentation</h3>
+      <h4 class="bold mt2">Get started</h4>
       <p>
         To get started you only need to add two classes. First add the <strong>.animated</strong>  class. Second class you can test and pick from the list above. 
       </p>
       <p>In the example below I'm fading in the Wunderlist logo</p>
       <% code do %>
-        <%= render 'animations/documentation.html' %>
+        <div class="animated fadeIn"></div>
+      <% end %>
+      <h4 class="bold mt3">Infinite </h4>
+      <% code do %>
+        <div class="animated zoomOutDown infinite"></div>
+      <% end %>
+      <h4 class="bold mt3">Delay </h4>
+      <% code do %>
+        <div class="animated zoomIn delay"></div>
+      <% end %>
+      <h4 class="bold mt3">Durations </h4>
+      <p>We have three durations at the moment. <strong>Fast</strong> (0.5s), <strong>Normal</strong> (Default, 1s), <strong>Slow</strong> (2s).
+      <% code do %>
+        <div class="animated bounceInDown fast"></div>
       <% end %>
     </div>
 
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script>
       function testAnim(x) {
-        $('#sandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#sandbox').removeClass().addClass(x + ' animated' + ' short').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
           $(this).removeClass();
         });
       };

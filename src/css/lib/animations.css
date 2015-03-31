@@ -5,6 +5,21 @@
   animation-fill-mode: both;
 }
 
+.animated.fast {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.animated.normal {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
 .animated.delay {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
