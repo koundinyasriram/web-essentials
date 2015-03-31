@@ -24,6 +24,8 @@ button,
   vertical-align: middle;
   -webkit-appearance: none;
   text-transform: uppercase;
+  letter-spacing: 0.08em;
+
 
 }
 
