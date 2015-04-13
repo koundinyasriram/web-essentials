@@ -3,40 +3,42 @@ table {
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
-  inherit: .gray, .mb3, .rounded, .border, .border-light-gray, .drop-down;
+  color: var(--gray);
+  margin-top: var(--space-3);
+  box-shadow: 0 1px 2px rgba(0,0,0,.07);
+  border-style: solid;
+  border-width: var(--border-width);
+  border-color: var(--lighter-gray);
+  border-radius: var(--border-radius);
 }
 
 th {
   text-align: left;
-  inherit: .h6, .heavy, .caps;
-}
-
-th {
+  font-size: var(--h6);
+  font-weight: var(--heavy-font-weight);
+  text-transform: uppercase;
+  letter-spacing: .07rem;
   padding: 2rem 1rem;
+  vertical-align: bottom
 }
 
 th,
 td {
   padding: 0.8rem;
   line-height: inherit;
-}
-
-th { vertical-align: bottom }
-td { vertical-align: top }
-
-th,
-tbody tr:nth-child(2n) td {
-  background-color: var(--off-white)
-}
-
-th,
-td {
   border-bottom-style: solid;
   border-bottom-width: var(--border-width);
   border-bottom-color: var(--border-color);
   border-right-style: solid;
   border-right-width: var(--border-width);
   border-right-color: var(--border-color);
+}
+
+td { vertical-align: top }
+
+th,
+tbody tr:nth-child(2n) td {
+  background-color: var(--off-white)
 }
 
 tr:last-child td {
