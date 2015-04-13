@@ -3,29 +3,34 @@ table {
   border-spacing: 0;
   max-width: 100%;
   width: 100%;
+  inherit: .gray, .mb3, .rounded, .border, .border-light-gray, .drop-down;
 }
 
 th {
   text-align: left;
-  font-weight: var(--table-header-font-weight);
+  inherit: .h6, .heavy, .caps;
+}
+
+th {
+  padding: 2rem 1rem;
 }
 
 th,
 td {
-  padding: var(--table-cell-padding-y) var(--table-cell-padding-x);
+  padding: 0.8rem;
   line-height: inherit;
 }
 
 th { vertical-align: bottom }
 td { vertical-align: top }
 
-.table-light th,
-.table-light tbody tr:nth-child(2n) td {
-  background-color: rgba(243, 246, 249, .7);
+th,
+tbody tr:nth-child(2n) td {
+  background-color: var(--off-white)
 }
 
-.table-light th,
-.table-light td {
+th,
+td {
   border-bottom-style: solid;
   border-bottom-width: var(--border-width);
   border-bottom-color: var(--border-color);
@@ -34,11 +39,11 @@ td { vertical-align: top }
   border-right-color: var(--border-color);
 }
 
-.table-light tr:last-child td {
+tr:last-child td {
   border-bottom: 0;
 }
 
-.table-light tr td:last-child,
-.table-light tr th:last-child {
+tr td:last-child,
+tr th:last-child {
   border-right: 0;
 }
