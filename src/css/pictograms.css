@@ -29,6 +29,7 @@
   height: 1em;
   line-height: 1em;
   font-size: 20px;
+  display: inline-block;
 }
 
 .wundercon.small {
