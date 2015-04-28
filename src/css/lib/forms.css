@@ -137,7 +137,13 @@ select.field-light {
 }
 
 .field-light:read-only:not(select) {
-  background-color: var(--darken-2);
+  color: var(--mid-gray);
+  background-color: var(--light-gray-blue);
+  opacity: 0.6;
+}
+
+.field-light:read-only:not(select):focus {
+  border:none;
 }
 
 .field-light:invalid {
