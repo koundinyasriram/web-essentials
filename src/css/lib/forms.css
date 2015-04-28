@@ -5,6 +5,8 @@ fieldset {
   font-size: var(--form-field-font-size);
   margin-top: 0;
   margin-bottom: var(--space-1, .5rem);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 input[type=text],
@@ -22,7 +24,6 @@ input[type=week] {
   box-sizing: border-box;
   height: var(--form-field-height);
   vertical-align: middle;
-  -webkit-appearance: none;
 }
 
 select {
