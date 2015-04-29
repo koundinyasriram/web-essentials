@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Wunderlist Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <div class="menubar full-width z4 border-box border-bottom p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+
+        <a href="docs.html" class="gray mr3">Docs</a>
+        <a href="apps.html" class="gray mr3">Manage Apps</a>
+        <a href="#" class="gray mr3">Support</a>
+
+      </nav>
+      <%= render 'menu-user.html' %>
+    </div>
+
+    <header class="px2 bg-white border-bottom full-width">
+
+      <div class="container">
+        <div class="md-table py3">
+          <img class="rounded md-table-cell inline-block m0" width="50" src="./images/integrations/twitter.jpg">
+          <div class="md-table-cell ml2 inline-block font-size-0">
+            <h2 class="m0 lighter">Twitter</span></h2>
+          </div>
+        </div>
+        <nav class="full-width block tabs">
+          <a href="#" class="tab bold h6 caps mr1 active border-blue gray">Members</a>
+          <a href="#" class="tab bold h6 caps gray">Teams</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container px2 py3 border-box">
+      <div class="clearfix">
+        <div class="col col-4">
+          <h4 class="m0 mb2">Teams</h4>
+          <p class="body-text-small">Create and modify your Teams within your Wunderlist at Work account.</p><p class="body-text-small">Teams are subsets of users for quickly assigning tasks and checking progress.</p>
+        </div>
+        <div class="col col-8 pl4 border-box">
+          <div class="col col-7">
+            <input class="field-light px2 full-width" placeholder="New Members Email Address"> </input>
+          </div>
+          <div class="col col-5">
+            <a class="button block">Add Team Members</a>
+          </div>
+
+          <div class="col col-12 members mt2">
+            <ul class="list-reset">
+              <li class="font-size-0 py2 border-bottom">
+                <div class="col-inline col-1 vm">
+                  <img class="circle md-table-cell inline-block m0" width="36" src="./images/avatar/kate.jpg">
+                </div>
+                <div class="col-inline col-10 vm">
+                  <div class="line-height-0">
+                    <h5 class="m0 bold inline-block">Kate Spencer</h5>
+                    <span class="ml1 label border rounded border-blue blue h7 heavy">ADMIN</span>
+                  </div>
+                  <h6 class="m0">kate@twitter.com</h6>
+                </div>
+              </li>
+              <li class="font-size-0 py2 border-bottom">
+                <div class="col-inline col-1 vm">
+                  <img class="circle md-table-cell inline-block m0" width="36" src="./images/avatar/lizzy.jpg">
+                </div>
+                <div class="col-inline col-10 vm">
+                  <div class="line-height-0">
+                    <h5 class="m0 bold inline-block">Lizzy Smith</h5>
+                  </div>
+                  <h6 class="m0">lizzy@twitter.com</h6>
+                </div>
+              </li>
+              <li class="font-size-0 py2 border-bottom">
+                <div class="col-inline col-1 vm">
+                  <img class="circle md-table-cell inline-block m0" width="36" src="./images/avatar/jarred.jpg">
+                </div>
+                <div class="col-inline col-10 vm">
+                  <div class="line-height-0">
+                    <h5 class="m0 bold inline-block">Jarred Herald</h5>
+                  </div>
+                  <h6 class="m0">jarred@twitter.com</h6>
+                </div>
+              </li>
+              <li class="font-size-0 py2 border-bottom">
+                <div class="col-inline col-1 vm">
+                  <img class="circle md-table-cell inline-block m0" width="36" src="./images/avatar/andrew.jpg">
+                </div>
+                <div class="col-inline col-10 vm">
+                  <div class="line-height-0">
+                    <h5 class="m0 bold inline-block">Andrew Spencer</h5>
+                  </div>
+                  <h6 class="m0">andrew@twitter.com</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= render 'developer/footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

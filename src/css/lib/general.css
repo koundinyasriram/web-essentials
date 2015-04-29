@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.label {
+  padding: 2px 4px;
+}
+
 .backface { -webkit-backface-visibility: hidden; }
 
 <%

@@ -25,6 +25,7 @@ button,
   -webkit-appearance: none;
   text-transform: uppercase;
   letter-spacing: 0.07em;
+  text-align: center;
 }
 
 ::-moz-focus-inner {
