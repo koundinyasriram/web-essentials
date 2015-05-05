@@ -1,6 +1,7 @@
 body {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: var(--normal-font-weight);
   line-height: var(--line-height);
   font-size: 100%;
