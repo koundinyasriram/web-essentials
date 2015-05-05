@@ -35,7 +35,7 @@
 .hover-<%= c %>:hover { color: var(--<%= c %>) }
 .hover-bg-<%= c %>:hover { background-color: var(--<%= c %>) }
 .bg-<%= c %> { background-color: var(--<%= c %>) }
-.bg-faded-<%= c %> { background-color: rgba(var(--<%= c %>),0.3) }
+.bg-faded-<%= c %> { background-color: rgba(var(--<%= c %>),0.1) }
 .bg-overlay-<%= c %> { background-color: rgba(var(--<%= c %>),0.95) }
 .border-<%= c %> { border-color: var(--<%= c %>) }
 .tab.<%= c %>:after { background-color: var(--<%= c %>) }
