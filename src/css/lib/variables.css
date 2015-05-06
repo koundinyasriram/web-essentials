@@ -57,12 +57,12 @@
 
   --true-black: black;
   --black: #1F252A;
-  --blue: #2B88D9;
+  --blue: #186AB2; /* Old #2B88D9 */
   --transparent-blue: rgba(43, 136, 217, .1);
   --dark-blue: #276092;
   --red: #DB4C3F;
   --transparent-red: rgba(214, 40, 34, .1);
-  --green: #65B01B;
+  --green: #3A7402; /* Old #65B01B */
   --transparent-green: rgba(101, 176, 27, .1);
   --yellow: #E6B035;
   --transparent-yellow: rgba(255, 230, 95, .1);
