@@ -37,8 +37,8 @@ td {
 td { vertical-align: top }
 
 th,
-tbody tr:nth-child(2n) td {
-  background-color: var(--off-white)
+tr:nth-child(even) td {
+  background-color: var(--off-white);
 }
 
 tr:last-child td {
