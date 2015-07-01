@@ -44,6 +44,12 @@
       .form-box {
         height: 42px;
       }
+      .icon-facebook {
+        color: #47629c;
+      }
+      .icon-google {
+        color: #db4c3f;
+      }
 
 
     </style>
@@ -58,47 +64,33 @@
         <nav class="full-width h6 block tabs">
           <a href="services.html" class="tab heavy caps wunderlist-gray inline-block vb">Emails</a>
           <a href="mail2wl.html" class="tab heavy caps wunderlist-gray inline-block vb">Mail to Wunderlist</a>
-          <a href="external-services.html" class="tab heavy caps wunderlist-gray inline-block vb active">external services</a>
+          <a href="external-services.html" class="tab heavy caps wunderlist-gray inline-block vb active">Connected accounts</a>
           <a href="authorized-apps.html" class="tab heavy caps wunderlist-gray inline-block vb">authorized apps</a>
         </nav>
       </div>
     </header>
     <div class="container">
       <div class="col md-col col-4 p2 px2">
-        <h4>Email Addresses</h4>
+        <h4>Connected Accounts</h4>
         <p></p>
-        <p class="col md-col col-10 fourteen">
-          Your <span class="green">Primary</span> email address will be used for account-related notifications.
-        </p>
-        <p class="col md-col col-10 fourteen">
-          The other email addresses will allow you to sign in to your Wunderlist account, and forward emails to your Wunderlist account using the <a href="https://support.wunderlist.com/customer/portal/articles/59709">Mail to Wunderlist</a> feature.
-        </p>
+        <p>Manage the connection to accounts from other services like Facebook and Google.</p>
       </div>
     <div class="col md-col col-8 p2 mb4"> 
       <ul class="list-reset clearfix mt2">
           <li class="border-bottom py2 clearfix mr1 hover-parent">
             <button type="submit" class="button inline-block button-outline red right" name="revoke" value="33355dccfde0514bd9c3">
-              Remove
+              Disconnect
             </button>
-            <img class="vm left mr2" width="64" height="64" src="//wunderlist-developer.s3.amazonaws.com/uploads/febdbcfb-b931-4cfb-976b-1fb7c4d758be/icon.w300.png">
-            <span class="bold inline vb">
-              <a href="https://sunrise.am" class="grey" target="_blank">Sunrise Calendar</a>
-            </span>
-            <span class="normal block vt line-height-1">
-              Your new calendar
-            </span>
-          </li>            <li class="border-bottom py2 clearfix mr1 hover-parent">
-            <button type="submit" class="button inline-block button-outline red right" name="revoke" value="7fdd0f9a3215f9d8f620">
-              Remove
+            <span class="wundercon icon-facebook inline-block vm" style="font-size:48px;"></span>
+            <span class="bold inline-block vm ml1">Facebook</span>
+          </li>
+          <li class="border-bottom py2 clearfix mr1 hover-parent">
+            <button type="submit" class="button inline-block white right" name="revoke" value="33355dccfde0514bd9c3">
+              Disconnect
             </button>
-            <img class="vm left mr2" width="64" height="64" src="//wunderlist-developer.s3.amazonaws.com/uploads/906c8229-29fa-4a28-b899-9970ae8a3612/icon.png">
-            <span class="bold inline vb">
-              <a href="https://lunchtime.wunderlist.com" class="grey" target="_blank">Lunchtime</a>
-            </span>
-            <span class="normal block vt line-height-1">
-              Small Sinatra application for the team Lunch event at 6Wunderkinder.
-            </span>
-          </li>        
+            <span class="wundercon icon-google inline-block vm" style="font-size:48px;"></span>
+            <span class="bold inline-block vm ml1">Google</span>
+          </li>
         </ul>
     </div>
     <script src="/js/app.min.js"></script>
