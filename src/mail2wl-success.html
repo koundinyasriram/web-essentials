@@ -57,7 +57,7 @@
         </div>
         <nav class="full-width h6 block tabs">
           <a href="services.html" class="tab heavy caps wunderlist-gray inline-block vb">Emails</a>
-          <a href="" class="tab heavy caps active wunderlist-gray inline-block vb">Mail to Wunderlist</a>
+          <a href="mail2wl.html" class="tab heavy caps active wunderlist-gray inline-block vb">Mail to Wunderlist</a>
           <a href="external-services.html" class="tab heavy caps wunderlist-gray inline-block vb">external services</a>
           <a href="authorized-apps.html" class="tab heavy caps wunderlist-gray inline-block vb">authorized apps</a>
         </nav>
@@ -78,6 +78,12 @@
         </p>
       </div>
     <div class="col md-col col-8 p2"> 
+      <div class="col-12 mb2 border border-green green bg-transparent-green rounded relative">
+        <a class="block right mt1 mr1" href="#!"><span class="block wundercon icon-x h3 green" title="x"></span></a>
+        <p class="m0 p1 overflow-hidden">
+          <strong>Success!</strong> You changed list to "Groceries" for kate.spencer@gmail.com
+        </p>
+      </div>
       <div class="col md-col col-12 border-bottom py1 mt1">
         <p class="m0 col col-9 caps h6 bold dark-gray">Email</p>
         <p class="col col-3 m0 caps h6 bold dark-gray">Mail2WL List</p>
@@ -94,9 +100,9 @@
       </div>
       <div class="remove col md-col py2 border-bottom col-12">
         <p class="m0 py1 vm col-6 md-col col pt1 inline-block">kate.spencer@gmail.com</p>
-        <select class="block right col md-col col-3 m0 field-light" onchange="location = this.options[this.selectedIndex].value;">
+        <select class="block right col md-col col-3 m0 field-light">
+          <option>Groceries</option>
           <option>Inbox</option>
-          <option value="mail2wl-success.html">Groceries</option>
           <option>Admin to-dos</option>
           <option>Sageman's Extension</option>
         </select>
