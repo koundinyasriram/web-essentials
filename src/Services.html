@@ -63,27 +63,41 @@
         </p>
       </div>
     <div class="col md-col col-8 p2 mb4"> 
-      <div class="col md-col col-12 border-bottom py1 mt1">
+      <!-- <div class="col md-col col-12 border-bottom py1 mt1">
         <p class="m0 col col-6 caps h6 bold dark-gray">Email</p>
         <a href="services-modal.html" class="m0 col-right small-button">Add new email</a>
+      </div> -->
+      <div class="col md-col col-12 py1 mt1">
+        <form action="/account/emails" method="POST">
+          <div class="col col-9">
+            <input class="block full-width field-light px1" type="text" name="email" autofocus="" placeholder="New Email Address">
+          </div>
+          <div class="col col-3 px1">
+            <input type="submit" class="center full-width button mb1" value="Add Email">
+          </div>
+        </form>
       </div>
       <div class="col md-col py2 border-bottom col-12">
         <p class="m0 py1 vm pt1 mr1 inline-block">kate@wunderlist.com</p>
         <span class="bold inline-block label border border-green green rounded h6 caps letter-spacing">Primary</span>
       </div>
-      <div class="remove col md-col py2 border-bottom col-12">
+      <div class="col md-col py2 border-bottom col-12">
         <p class="m0 py1 vm col-8 md-col col pt1 inline-block">kate.spencer@gmail.com</p>
         <div class="col md-col col-4">
-          <span class="h1 o0 pictogram-icon wundercon red mr2 right pointer icon-trash" title="trash"></span>
+          <button type="submit" class="button inline-block button-outline red right" name="pending_service_id" value="37">
+            Remove
+          </button>
         </div>
       </div>
-      <div class="remove col md-col py2 border-bottom col-12">
+      <div class="col md-col py2 border-bottom col-12">
         <div class="col md-col col-8">
           <p class="m0 py1 vm pt1 inline-block mr1">kate@microsoft.com</p>
           <span class="bold inline-block label border border-yellow yellow rounded h6 caps letter-spacing">Pending</span>
         </div>
         <div class="col md-col col-4">
-          <span class="h1 o0 pictogram-icon wundercon red mr2 right pointer icon-trash" title="trash"></span>
+          <button type="submit" class="button inline-block button-outline red right" name="pending_service_id" value="37">
+            Remove
+          </button>
         </div>
       </div>
       <!-- <div class="col md-col py2 border-bottom col-12">
