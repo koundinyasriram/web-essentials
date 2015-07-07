@@ -9,40 +9,15 @@
 
 button,
 .button {
-  position: relative;
   font-size: var(--button-font-size);
-  font-weight: var(--button-font-weight);
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
   line-height: var(--button-line-height);
   padding: var(--button-padding-y) var(--button-padding-x) calc(var(--button-padding-y) - 2px);
-  margin: 0;
-  height: auto;
-  border: 1px solid transparent;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
 }
 
 .small-button {
-  position: relative;
   font-size: 0.6rem;
-  font-weight: var(--button-font-weight);
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
   line-height: var(--button-line-height);
   padding: 6px 9px;
-  margin: 0;
-  height: auto;
-  border: 1px solid transparent;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
 }
 
 ::-moz-focus-inner {
@@ -67,7 +42,20 @@ button,
 
 .button, .small-button {
   color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  height: auto;
+  font-weight: var(--button-font-weight);
+  display: inline-block;
+  text-decoration: none;
   background-color: var(--blue);
+  border: 1px solid transparent;
+  position: relative;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
   border-radius: var(--border-radius);
   transition-duration: .05s;
   transition-timing-function: ease-out;
