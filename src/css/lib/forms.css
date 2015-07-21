@@ -58,6 +58,12 @@ textarea {
   padding: 0;
 }
 
+.field-reset {
+  border: none;
+  outline: 0;
+  color: var(--dark-gray);
+}
+
 .field-simple {
   font-size: var(--body-text-small);
   -webkit-appearance: none;
@@ -115,7 +121,7 @@ textarea {
 }
 
 select.field-light {
-  padding: 5px;
+  padding: 5px 30px 5px 5px;
   -webkit-appearance: none;
   text-indent: 5px;
   background-position: right 10px center;
@@ -137,13 +143,7 @@ select.field-light {
 }
 
 .field-light:read-only:not(select) {
-  color: var(--mid-gray);
-  background-color: var(--light-gray-blue);
-  opacity: 0.6;
-}
-
-.field-light:read-only:not(select):focus {
-  border-color:transparent;
+  background-color: var(--darken-2);
 }
 
 .field-light:invalid {
