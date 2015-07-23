@@ -117,7 +117,7 @@ textarea {
   border-color: rgba(var(--border-color),.8);
   border-radius: var(--border-radius);
   color: var(--gray);
-  height:42px;
+  height:38px;
 }
 
 select.field-light {
