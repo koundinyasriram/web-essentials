@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="css/pictograms.min.css">
     <style>
       /* app specific css */
-
       .color-swatch {
         width: 120px;
       }
-
       .color-swatch-description {
         margin-top: 100px;
       }
-
       .pictogram {
         width: 80px;
         text-align: center;
@@ -24,55 +21,95 @@
         margin-bottom: 1rem;
         display: inline-block;
       }
-
       .pictogram-square {
         position: relative;
         display: block;
         width: 80px;
         height: 80px;
       }
-
       .pictogram-key {
         position: absolute;
         right: 0;
         top: 0;
         padding: .25rem .5rem;
       }
-
       .pictogram-icon {
         font-size: 2.75rem; /* 44px / 16px */
         position: relative;
         top: 20px;
       }
-
     </style>
   </head>
   <body class="body-full-height">
 
-    <%= render 'index/front.html' %>
-    <%= render 'index/menu.html' %>
-    <%= render 'index/typography.html' %>
-    <%= render 'index/colors.html' %>
-    <%= render 'index/pictograms.html' %>
-    <%= render 'index/whitespace.html' %>
-    <%= render 'index/layout.html' %>
-    <%= render 'index/grid.html' %>
-    <%= render 'index/components.html' %>
-
-    <div class="clearfix" id="responsiveness">
-      <h2 class="lighter px4">08. Responsiveness</h2>
-
-      <div class="lg-col lg-col-6 p4">
+    <div class="fixed top-0 left-0 bg-white full-height md-col md-col-3 lg-col-2 md-show z4 border-right drop-shadow">
+      <div class="absolute top-0 bottom-0 left-0 right-0 overflow-scroll">
+        <div class="p2 bg-white">
+          <%= render 'index/logo.html' %>
+        </div>
+        <span class="ml2 mr2 block h6 caps letter-spacing bold border-bottom mb1">Overview</span>
+        <ul class="list-reset px2 letter-spacing h6 bold caps">
+          <li><a href="#typography">Intro</a></li>
+          <li><a href="#colors">Design Principles</a></li>
+          <li><a href="#pictograms">How it works</a></li>
+          <li><a href="#whitespace">Examples</a></li>
+          <ul class="list-reset ml1 letter-spacing h7 bold caps border-left pl1 mb1 mthalf">
+            <li><a href="#pictograms">Example apps</a></li>
+            <li><a href="#typography">Our Layouts</a></li>
+            <li><a href="#colors">Menubar</a></li>
+          </ul>
+        </ul>
+        <span class="ml2 mr2 block h6 caps letter-spacing bold border-bottom mb1">Docs</span>
+        <ul class="list-reset px2 letter-spacing h6 bold caps">
+          <li><a href="#variables">Variables</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#pictograms">Pictograms</a></li>
+          <li><a href="#whitespace">Whitespace</a></li>
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#grid">Borders</a></li>
+          <li><a href="#components">Components</a></li>
+          <ul class="list-reset ml1 letter-spacing h7 bold caps border-left pl1 mb1 mthalf">
+            <li><a href="#variables">Forms</a></li>
+            <li><a href="#variables">Buttons</a></li>
+            <li><a href="#variables">Alerts</a></li>
+            <li><a href="#variables">Boxes</a></li>
+            <li><a href="#variables">Images</a></li>
+            <li><a href="#variables">Tabs</a></li>
+            <li><a href="#variables">Labels</a></li>
+          </ul>
+          <li><a href="#responsiveness">Responsiveness</a></li>
+          <li><a href="/animations">Animations</a></li>
+        </ul>
       </div>
     </div>
+    <div class="sm-col sm-col-12 md-col-9 lg-col-10 sm-show z3 right">
+      <!-- <%= render 'index/front.html' %> -->
+      <!-- <%= render 'index/menu.html' %> -->
+      <%= render 'index/typography.html' %>
+      <%= render 'index/colors.html' %>
+      <%= render 'index/pictograms.html' %>
+      <%= render 'index/whitespace.html' %>
+      <%= render 'index/layout.html' %>
+      <%= render 'index/grid.html' %>
+      <%= render 'index/components.html' %>
 
-    <div class="clearfix" id="variables">
-      <div class="p4">
-        <h2 class="mt0 lighter">09. Variables</h2>
+      <div class="clearfix" id="responsiveness">
+        <h2 class="lighter px4">08. Responsiveness</h2>
 
-<% code do %>
-<%= render 'css/lib/variables.css' %>
-<% end %>
+        <div class="lg-col lg-col-6 p4">
+        </div>
+      </div>
+
+      <div class="clearfix" id="variables">
+        <div class="p4">
+          <h2 class="mt0 lighter">09. Variables</h2>
+
+        <% code do %>
+        <%= render 'css/lib/variables.css' %>
+        <% end %>
+        </div>
       </div>
     </div>
 
