@@ -12,19 +12,26 @@
     </style>
   </head>
   <body>
-    <%= render 'integrations/menu-new.html' %>
-    <header class="full-width py2 bg-red pictos true-white md-table page-header">
-      <div class="container px2 py3 border-box">
-        <div class="md-table">
-          <img class="rounded md-table-cell inline-block m0" width="60" height="60" src="./images/integrations/twitter.jpg">
-          <div class="md-table-cell ml3 inline-block font-size-0">
-            <h2 class="m0 lighter">Favourite Tweets <span class="muted">by Twitter Inc.</span></h2>
-            <p class="m0 muted">Added March 16th, 2015</p>
-          </div>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="light-gray mr3">All Integrations</a>
+        <a href="my-integrations.html" class="blue mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <div class="container px2 py3 border-box">
+      <div class="md-table">
+        <img class="r3 md-table-cell inline-block m0" width="60" src="./images/integrations/twitter.png">
+        <div class="md-table-cell ml2 inline-block font-size-0">
+          <h2 class="m0 lighter">Favourite Tweets <span class="muted">by Wunderlist</span></h2>
+          <p class="m0 muted">Added March 16th, 2015</p>
         </div>
       </div>
-    </header>
-    <div class="container p2 border-box">
+      <div class="p1 mt3 border rounded border-red bg-faded-red red">Something went wrong with your integration.</div>
       <div class="py3 border-bottom clearfix">
         <h4 class="mt1 bold">Description</h4>
         <div class="col col-4">
@@ -41,8 +48,7 @@
           <p class="light-gray">Give Wunderlist access to your Twitter account. Access can be revoked at any time.</p>
         </div>
         <div class="col col-7 right">
-          <div class="p1 border rounded border-red bg-faded-red red">There has been an authentication problem with Twitter</div>
-          <a href="#" class="h5 blue mt1">Reconnect now</a>
+          <div class="p1 border rounded border-blue bg-faded-blue blue">Connected to twitter as @jarred</div>
         </div>
       </div>
       <div class="py3 border-bottom clearfix">
@@ -51,10 +57,10 @@
           <p class="light-gray">Choose the list you'd like Twitter to be connceted to.</p>
         </div>
         <div class="col col-7 right">
-          <div class="p1 border rounded border-red bg-faded-red red mb1">
+          <div class="p1 border display-none rounded border-red bg-faded-red red mb1">
             Hey it looks there's a roblem with the list connected to this integration
           </div>
-          <select class="block full-width field-light border-red" title="heuristic type: UNKNOWN_TYPE
+          <select class="block full-width field-light" title="heuristic type: UNKNOWN_TYPE
         server type: NO_SERVER_DATA
         field signature: 4203909268
         form signature: 17092570356280019368
@@ -65,7 +71,6 @@
             <option>Personal</option>
             <option>Work</option>
           </select>
-          <p class="light-gray mt1 h6">We've suggested a list but you can choose another one or create a new one.</p>
         </div>
       </div>
       <div class="py3 clearfix">
@@ -74,11 +79,12 @@
         </div>
         <div class="col col-7 right">
           <a class="inline-block mr2 button bg-green">Save Settings</a>
-          <a class="inline-block button bg-true-white border red">Delete Integration</a>
+          <a class="button inline-block bg-red white center">Remove</a>
           <p class="h5 mt1 light-gray">Deleting this integration is permenant and can not be CTRL + Z'ed.</p>
         </div>
       </div>
     </div>
+    <%= render 'developer/footer.html' %>
     <script src="js/app.min.js"></script>
   </body>
 </html>
