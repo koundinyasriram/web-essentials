@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Menubar</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+        .menubar .nudge-down {
+          top: 3px;
+        }
+
+        .menubar .nav-links {
+          top: 1px;
+          padding-left: 1rem;
+          line-height: 1.75rem; /* 28 / 16 */
+        }
+
+        .menubar .nav-links .is-active {
+          color: #2B88D9 !important;
+        }
+
+        .menubar a .wundercon {
+          font-size: 21px;
+          color: #A3A3A3;
+        }
+
+        @media (min-width: 48em) {
+          .menubar .nav-links {
+            padding-left: 2rem;
+          }
+        }
+
+        .menubar .nav-links a:hover, .menubar .drop-down-window a:hover {
+          color: #2B88D9;
+        }
+
+        .menubar .chevron {
+          top: 12px;
+        }
+
+        .menubar .drop-down-window {
+          top: 100%;
+        }
+        .search-field:before {
+          content: 'z';
+          font-family: 'Wundercon';
+          font-weight: 300;
+          position: absolute;
+          top: 16px;
+          left: 25px;
+          font-size: 18px;
+          color: #aaa;
+        }
+      </style>
+  </head>
+  <body class="body-full-height">
+    <div class="p4 bg-white">
+      <h1 class="mt0 lighter">The .menubar</h1>
+
+      <!--
+      TODO: When resizing, the Wunderlist wordmark sometimes gets stuck
+            below the logo. I don't know why, but I also think I can figure
+            this out later.
+      -->
+
+      <div>
+        <%= render 'menubar/main.html' %>
+
+        <h3 class="lighter">How to build the menubar</h3>
+
+        <p>
+          The basic shapes are to have one left, one right, and then one fluid
+          middle. Here is a simplified example:
+        </p>
+
+        <h4 class="bold">1. Floats</h4>
+
+        <% code(insert: true) do %>
+        <div class="clearfix outline-blue mt2 mb2">
+          <div class="left p2">.left</div>
+          <div class="right p2">.right</div>
+          <div class="overflow-hidden p2">.overflow-hidden</div>
+        </div>
+        <% end %>
+
+        <% code(insert: true) do %>
+        <div class="clearfix outline-blue mt2 mb2">
+          <div class="left p1">
+            <div class="left p1">logo</div>
+            <div class="left p1">wordmark</div>
+          </div>
+          <div class="right p1">
+            <div class="left p1">bell</div>
+            <div class="left p1">bubble</div>
+            <div class="left p1">
+              <div class="left">avatar</div>
+              <div class="left">chevron</div>
+            </div>
+          </div>
+          <div class="overflow-hidden p2">.overflow-hidden</div>
+        </div>
+        <% end %>
+
+        <h4 class="bold">3. Make responsive</h4>
+        <p>
+          The responsive class <code>.md-show</code> means "only show when
+          medium size screen or above." Go ahead and resize the window.
+        </p>
+
+        <% code(insert: true) do %>
+        <div class="clearfix outline-blue mt2 mb2">
+          <div class="left p1">
+            <div class="left p1">logo</div>
+            <div class="left p1 md-show">wordmark .md-show</div>
+          </div>
+          <div class="right p1">
+            <div class="left p1 md-show">bell .md-show</div>
+            <div class="left p1 md-show">bubble .md-show</div>
+            <div class="left p1">
+              <div class="left">avatar</div>
+              <div class="left">chevron</div>
+            </div>
+          </div>
+          <div class="overflow-hidden p2">.overflow-hidden</div>
+        </div>
+        <% end %>
+
+        <h4 class="bold">4. Variations</h4>
+
+        <p>Web app</p>
+        <%= render 'menubar/webapp.html' %>
+
+        <p class="mt3">Public Lists</p>
+        <%= render 'menubar/public-lists.html' %>
+
+        <p class="mt3">Logged out state</p>
+        <%= render 'menubar/logged-out.html' %>
+
+        <p class="mt3">Authentication animation</p>
+        <%= render 'menubar/authentication.html' %>
+
+      </div>
+    </div>
+
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
