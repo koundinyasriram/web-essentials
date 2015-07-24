@@ -1,0 +1,36 @@
+.menubar
+  .icon
+    height 28px
+    width 28px
+    background-size 100%
+    background-image url(data:image/png)
+
+  .logo
+    height 14px
+    width 86px
+    background-size 100%
+    background-image url(data:image/svg+xml)
+
+.chevron
+  width 7px
+  height 3px
+  background-image url(data:image/svg+xml)
+
+@media $breakpoint-md
+  .menubar .nav-links
+    padding-left 2rem
+
+  .menubar
+    .drop-down-window
+      top 100%
+
+.search-field
+  &:before
+    content 'z'
+    font-family 'Wundercon'
+    font-weight 300
+    position absolute
+    top 13px
+    left 25px
+    font-size 18px
+    color #aaa

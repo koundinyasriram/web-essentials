@@ -1,7 +1,2 @@
 node_modules/*
-build/*
-render/*
-release/*
 .DS_Store
-tiny-lr.pid
-*.log

@@ -1,26 +1,14 @@
 {
-  "name": "wunderlist-web-essentials",
-  "version": "0.3.25",
-  "description": "Wunderlist's Web Essentials",
-  "author": "Nathan Herald, Benjamin Mateev, Adam Renklint, Timothy Achumba, Joakim Keussen, Brent Jackson",
-  "license": "MIT",
+  "author": "Wunderlist",
+  "name": "web-essentials",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.6.5"
+  },
+
   "dependencies": {
-    "colors.css": "^2.2.0",
-    "disclose": "git://github.com/wunderlist/disclose.git#master"
-  },
-  "devDependencies": {
-    "basswork": "^1.2.0",
-    "browserify": "^9.0.3",
-    "clean-css": "^3.1.3",
-    "uglifyify": "^3.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wunderlist/web-essentials.git"
-  },
-  "keywords": [
-    "CSS",
-    "OOCSS",
-    "Basscss"
-  ]
+    "stylus": "latest",
+    "nib": "latest"
+  }
 }
+
