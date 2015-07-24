@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Wunderlist Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="blue mr3">All Integrations</a>
+        <a href="my-integrations.html" class="light-gray mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <header class="full-width bg-white pictos border-bottom md-table page-header overflow-hidden">
+      <div class="container py4 px2 border-box clearfix relative">
+        <div class="col-inline col-1 vt">
+          <img class="left md-table-cell inline-block border drop-shadow round-square vt mr3" src="./images/integrations/sunrise.jpg" width="70px" height="70px"/>
+        </div>
+        <div class="col-inline col-6 px2 border-box">
+          <h1 class="mt0 mb1 lighter gray line-height-1">Sunrise Calendar</h1>
+          <p class="h4 gray">Sunrise is a free calendar app. See all your to-dos Wunderlist to-dos into your favourite daily calendar.</p>
+          <div class="col col-4 mt1 left center">
+            <a class="button center block bg-blue true-white">Learn More</a>
+            <p class="h6 muted m0">Add via Sunrise App</a>
+          </div>
+        </div>
+        <div class="absolute bottom-0 right-0">
+          <img class="left md-table-cell inline-block rounded vt" src="./images/integrations/featured/sunrise.png" width="350px"/>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="clearfix px2 py3 font-size-0">
+        <div class="col-inline col-8">
+          <h3 class="m0 lighter">All Integrations</h3>
+        </div>
+        <div class="col-inline col-4">
+          <input class="block full-width pill field-light border-box px2 m0" placeholder="Search for an integration"/>
+        </div>
+      </div>
+      <ul class="list-reset">
+        <li class="px2 border-box">
+          <div class="clearfix border-top py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/bugsnag.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Bugsnag</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Adds all occuring errors to a Wunderlist.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/evernote.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Evernote</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Create to-dos from your Evernote Notes.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/twitter.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Favourite Tweets</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Adds all the tweets you favourite that have a link to Wunderlist.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/github.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Github Issues</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Add all your GitHub issues from a repository to a Wunderlist.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/gmail.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Gmail</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a><span class="ml1 disconnected inline-block"></span></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Add all your starred Gmail messages to Wunderlist.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/habitrpg.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">HabitRPG</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Get XP & Loot for doing work, lose HP for slacking.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/hipchat.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">HipChat</span> by <a class="light-gray hover-blue" href="#">Atlassian</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Post notifications to a HipChat channel when you update and complete tasks in a selected list.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Learn More</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/onenote.png">
+            </div>
+            <div class="col-inline col-9 vm">
+              <h4 class="m0 light-gray title"><span class="bold gray">OneNote</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Sync all wunderlists to a dedicated section in OneNote.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/scanbot.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Scanbot</span> by <a class="light-gray hover-blue" href="#">Doo</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Items scanned into Scanbot create tasks in Wunderlists that carry the scans as attachments.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Learn More</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/slack.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Slack</span> by <a class="light-gray hover-blue" href="#">Slack</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Post notifications to a Slack channel when you update and complete tasks in a selected list.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Learn More</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/songkick.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Songkick</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Adds tracked artists and events to a Wunderlist.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Add</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/sunrise.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Sunrise</span> by <a class="light-gray hover-blue" href="#">Microsoft Corporation</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">All to-dos with a due date get synced to a calendar in Sunrise.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Learn More</a>
+            </div>
+          </div>
+        </li>
+        <li class="px2 border-box">
+          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
+            <div class="col-inline col-1 line-height-0">
+              <img class="r3" width="60" src="./images/integrations/zapier.png">
+            </div>
+            <div class="col-inline col-9">
+              <h4 class="m0 light-gray title"><span class="bold gray">Zapier</span> by <a class="light-gray hover-blue" href="#">Zapier</a></h4>
+              <p class="mb0 mr4 body-text-small light-gray">Create zaps and hook up other services already connected to Zapier Services.</p>
+            </div>
+            <div class="col-inline col-2">
+              <a class="button block center white">Learn More</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <%= render 'developer/footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
