@@ -6,7 +6,67 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/essentials.min.css">
     <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
 
+    .list-title{
+      height: 72px;
+      width: 789px;
+    }
+
+
+    .background-image li {
+      list-style-type: none;
+      background-image: url('https://s3-eu-west-1.amazonaws.com/wunderlist2-static/Support+Gif%27s/Task.svg');
+      background-repeat: no-repeat;
+      padding: 0px 0px 1px 34px;
+      vertical-align: middle;
+    }
+
+    .list-task{
+      line-height: 1.8rem
+    }
+
+    .list-task li {
+      background-size: 16px 16px;
+      background-position: 8px 5px; 
+      font-size: 16px;
+      color: #444444; 
+    }
+
+    .list-subtask{
+      line-height: 1.5rem
+    }
+
+    .list-subtask li {
+      background-size: 14px 14px;
+      background-position: 10px 6px; 
+      font-size: 15px;
+      color: #5B5B5B;
+
+    }
+
+    ::-webkit-input-placeholder {
+      color: #186AB2;
+      margin: 0;
+      line-height: 1;
+    }
+
+     .addTask-input{
+      padding:13px 60px 14px 0;
+    }
+
+    .pl-custom {
+      padding-left: 1.5rem
+    }
+
+/*    li:before {
+      background: rgba(0,0,0,0.00);
+      border: 1px solid #5B5B5B;
+      border-radius: 3px;
+}
+*/
+
+    </style>
   </head>
   <body>
 
@@ -27,21 +87,263 @@
 
     </section>
 
+
+
+
+<!--     <section class="login p3">
+      <h6 class="mt0 caps bold">Add View II</h6>
+    <div class="stage border table relative" style="width:789px;height:360px;background-color:#f6f6f6;">
+      
+      <header class="absolute full-width table bg-true-white page-header px2 py2 border-box z1" style="bottom:0px; box-shadow:0 -1px 2px rgba(0,0,0,.07);">
+
+          <a class="inline-block rounded button">Add to Wunderlist</a>
+
+        <div class="clearfix inline-block ml2 col-4 border border-grey rounded" style="padding:0.42rem 0.5rem 0.42rem 1rem;">
+          <div class="inline-block pr1">
+            <span class="wundercon icon-list  inline-block vm"></span>
+          </div>
+          <div class="inline-block col-10 vm">
+            <select value="Inbox" onChange="{handleListChange}" class="col-12 p0 inline-block center field-simple bg-transparent h4 m0 pointer" title="List">
+              <option value="Inbox">Inbox</option>
+              <option value="Inbox">Private to-dos</option>
+              <option value="Inbox">Home</option>
+            </select>
+          </div>
+        </div>
+
+
+        </header>
+
+          <ul class="list-reset m0 p2 overflow-y-scroll border-box" style="height:360px;">
+
+        <li class="clearfix relative mb2 phalf border border-blue">
+          <div class="col-inline p1">
+            <span class="wundercon icon-plus blue inline-block vm"></span>
+          </div>
+          <div class="col-inline col-11 vm">
+            <input type="text" class="m0 blue bg-transparent line-height-1" maxlength="255" placeholder="Add a to-do..."
+            style="border:none; outline:none; width:100%">
+          </div>
+        </li>
+
+
+          <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+          <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+          <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
+
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+         
+        </ul>
+
+      </div>
+    </section> -->
+
+
     <section class="login p3">
-      <h6 class="mt0 caps bold">Add View</h6>
-      <div class="stage border table bg-white relative" style="width:789px;height:216px;">
+      <h6 class="mt0 caps bold">Add View III</h6>
+    <div class="stage border table relative bg-off-white" style="width:100%;height:300px;">
+      
+      
+
+          <ul class="list-reset m0 p2 overflow-y-scroll border-box" style="height:300px;">
+
+        <li class="clearfix relative mb2 phalf border border-blue">
+          <div class="col-inline p1">
+            <span class="wundercon icon-plus blue inline-block vm"></span>
+          </div>
+          <div class="col-inline col-11 vm">
+            <input type="text" class="m0 blue bg-transparent line-height-1" maxlength="255" placeholder="Add a to-do..."
+            style="border:none; outline:none; width:100%">
+          </div>
+        </li>
+
+          <li class="clearfix relative mbhalf phalf bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 mb1 gray">
+                Take jenny to the airport XXXX
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+          <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+
+          <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+          <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+           <li class="clearfix relative mbhalf phalf pb1 bg-true-white drop-shadow">
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+
+          <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
+
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkbox inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take jenny to the airport
+              </p>
+            </div>
+            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
+            </span>
+          </li>
+         
+        </ul>
+
+        <header class="relative full-width table bg-true-white page-header px2 py2 border-box z1" style="bottom:0px; box-shadow:0 -1px 2px rgba(0,0,0,.07);">
+
+        <div class="col xsm-col-6 md-col-7 relative inline-block border border-grey rounded"style="padding:0.42rem 0.5rem 0.42rem 0.9rem;">
+          <div class="inline-block absolute vm">
+            <span class="wundercon icon-list  vm"></span>
+          </div>
+          <div class="full-width">
+            <select value="Inbox" onChange="{handleListChange}" class="full-width field-simple bg-transparent h4 m0 pointer px3" style="" title="List">
+              <option value="Inbox">Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox Inbox</option>
+              <option value="Inbox">Private to-dos</option>
+              <option value="Inbox">Home</option>
+            </select>
+          </div>
+        </div>
+
+        <a class="col-right center xsm-col-5 md-col-4 lg-col-3 relative rounded button">Add to Wunderlist</a>
+
+
+        </header>
+
+      </div>
+    </section>
+
+
+
+
+
+
+     <section class="login p3">
+      <h6 class="mt0 caps bold">Sidebar View</h6>
+      <div class="stage border table bg-white relative" style="width:300px;height:516px;">
 
         <header class="relative full-width table bg-true-white drop-shadow page-header px2 py1 border-box z1">
           <div>
             <span class="wundercon icon-list inline-block vm"></span>
-            <select value="Inbox" onChange="{handleListChange}" class="col-2 inline-block center field-simple bg-transparent h4 m0 pointer" title="List">
+            <select value="Inbox" onChange="{handleListChange}" class="col-4 inline-block center field-simple bg-transparent h4 m0 pointer" title="List">
               <option value="Inbox">Inbox</option>
             </select>
-            <button class="absolute right-0 top-0 full-height bg-blue caps white px3 not-rounded">Add</button>
           </div>
         </header>
+          <ul class="list-reset m0 p2 border-box" style="height:516px;">
 
-        <ul class="list-reset m0 p2 overflow-scroll border-box" style="height:216px;">
+          <li class="clearfix relative mb1 phalf pb1 drop-shadow" style="background-color: #E1F2FE;">
+
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkmark blue inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                This is a really long piece of text
+              </p>
+              <div class="meta h6 blue">
+                <span class="pr1">
+                  Due Today
+                </span>
+                <span class="pr1 green">
+                  3 Subtasks
+                </span>
+              </div>
+            </div>
+
           <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
 
             <div class="col-inline p1">
@@ -56,14 +358,36 @@
                 <span class="pr1">
                   Due Today
                 </span>
-                <span class="pr1">
-                  1 Note
+                <span class="pr1 green">
+                  3 Subtasks
                 </span>
               </div>
             </div>
-            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
-            </span>
           </li>
+
+
+          <li class="clearfix relative mb1 phalf pb1 drop-shadow" style="background-color: #E1F2FE;">
+
+            <div class="col-inline p1">
+              <span class="wundercon icon-checkmark blue inline-block vm"></span>
+            </div>
+
+            <div class="col-inline col-10 vt mt1">
+              <p class="m0 gray">
+                Take Jenny to the Airport
+              </p>
+              <div class="meta h6 blue">
+                <span class="pr1">
+                  Due Today
+                </span>
+                <span class="pr1 green">
+                  3 Subtasks
+                </span>
+              </div>
+            </div>
+          </li>
+
+
           <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
 
             <div class="col-inline p1">
@@ -72,68 +396,66 @@
 
             <div class="col-inline col-10 vt mt1">
               <p class="m0 gray">
-                Take jenny to the airport
+                This is a really long piece of text
               </p>
               <div class="meta h6 blue">
                 <span class="pr1">
                   Due Today
                 </span>
-                <span class="pr1">
-                  1 Note
+                <span class="pr1 green">
+                  3 Subtasks
                 </span>
               </div>
             </div>
-            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
-            </span>
           </li>
-          <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
 
-            <div class="col-inline p1">
-              <span class="wundercon icon-checkbox inline-block vm"></span>
-            </div>
 
-            <div class="col-inline col-10 vt mt1">
-              <p class="m0 gray">
-                Take jenny to the airport
-              </p>
-              <div class="meta h6 blue">
-                <span class="pr1">
-                  Due Today
-                </span>
-                <span class="pr1">
-                  1 Note
-                </span>
-              </div>
-            </div>
-            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
-            </span>
-          </li>
-          <li class="clearfix relative mb1 phalf pb1 bg-true-white drop-shadow">
-
-            <div class="col-inline p1">
-              <span class="wundercon icon-checkbox inline-block vm"></span>
-            </div>
-
-            <div class="col-inline col-10 vt mt1">
-              <p class="m0 gray">
-                Take jenny to the airport
-              </p>
-              <div class="meta h6 blue">
-                <span class="pr1">
-                  Due Today
-                </span>
-                <span class="pr1">
-                  1 Note
-                </span>
-              </div>
-            </div>
-            <span class="block absolute right-1 top-1 phalf wundercon icon-x h3" title="x">
-            </span>
-          </li>
+         
         </ul>
+        <button class="left-0 bottom-0 full-width r0 center button not-rounded z2" style="position:absolute;">Import Selected To-dos (2)</button>
 
       </div>
     </section>
+
+
+
+
+
+  <section class="login p3">
+    <h6 class="mt0 caps bold">Email Body</h6>
+      <div class="list-title table">
+       <div class="stage table " style="width:789px;height:216px;">
+
+        <header class="relative full-width table bg-true-white border-bottom page-header px2 py1 border-box z1">
+          <div class="col col-10 relative">
+            <span class="wundercon icon-list inline-block mid-gray vm"></span>
+            <span class="col-2 inline-block bg-transparent h4 m0 dark-gray pl1 vm" style="font-weight:600;">Inbox
+            </span>
+          </div>
+      </header>
+          <ul class="p1 list-task background-image">
+            <li>Pick up David from Airport</li>
+            <li>Finalize Kitchen Layout</li>
+              <ul class="m0 list-subtask pl-custom mb1 background-image">
+                <li>Drawings</li>
+                <li>Approval of Draft Drawings</li>
+              </ul>
+            <li>Pick up David from Airport</li>
+            <li>Pick up David from Airport</li>
+            <li>Finalize Kitchen Layout</li>
+              <ul class="m0 list-subtask pl-custom mb1 background-image">
+                <li>Drawings</li>
+                <li>Approval of Draft Drawings</li>
+              </ul>
+            <li>Pick up David from Airport</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
     <script src="js/app.min.js"></script>
   </body>
 </html>

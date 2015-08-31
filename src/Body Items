@@ -1,0 +1,43 @@
+    <style>
+
+    .background-image li {
+      list-style-type: none;
+      background-image: url('https://s3-eu-west-1.amazonaws.com/wunderlist2-static/Support+Gif%27s/Task.svg');
+      background-repeat: no-repeat;
+      padding: 0px 0px 1px 34px;
+      vertical-align: middle;
+    }
+
+  	.list-task{
+      line-height: 1.8rem
+    }
+
+    .list-task li {
+      background-size: 16px 16px;
+      background-position: 8px 5px; 
+      font-size: 16px;
+      color: #444444; 
+    }
+
+    .list-subtask{
+      line-height: 1.5rem
+    }
+
+    .list-subtask li {
+      background-size: 14px 14px;
+      background-position: 10px 6px; 
+      font-size: 15px;
+      color: #5B5B5B;
+
+    }
+
+    </style>
+    <ul class="p1 list-task background-image">
+       <li>Pick up David from Airport</li>
+       <li>Finalize Kitchen Layout</li>
+    </ul>
+
+    <ul class="m0 list-subtask pl-custom mb1 background-image">
+        <li>Drawings</li>
+       	<li>Approval of Draft Drawings</li>
+    </ul>
