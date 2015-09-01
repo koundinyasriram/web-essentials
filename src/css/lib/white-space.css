@@ -91,3 +91,104 @@
 .pr4 { padding-right:  var(--space-4); }
 .pb4 { padding-bottom:  var(--space-4); }
 .pl4 { padding-left:  var(--space-4); }
+
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
+
+  .<%= size %>-m0  { margin:        0 }
+	.<%= size %>-mt0 { margin-top:    0 }
+	.<%= size %>-mr0 { margin-right:  0 }
+	.<%= size %>-mb0 { margin-bottom: 0 }
+	.<%= size %>-ml0 { margin-left:   0 }
+
+	.<%= size %>-mhalf  { margin:        var(--space-half) }
+	.<%= size %>-mthalf { margin-top:    var(--space-half) }
+	.<%= size %>-mrhalf { margin-right:  var(--space-half) }
+	.<%= size %>-mbhalf { margin-bottom: var(--space-half) }
+	.<%= size %>-mlhalf { margin-left:   var(--space-half) }
+
+	.<%= size %>-m1  { margin:        var(--space-1) }
+	.<%= size %>-mt1 { margin-top:    var(--space-1) }
+	.<%= size %>-mr1 { margin-right:  var(--space-1) }
+	.<%= size %>-mb1 { margin-bottom: var(--space-1) }
+	.<%= size %>-ml1 { margin-left:   var(--space-1) }
+
+	.<%= size %>-m2  { margin:        var(--space-2) }
+	.<%= size %>-mt2 { margin-top:    var(--space-2) }
+	.<%= size %>-mr2 { margin-right:  var(--space-2) }
+	.<%= size %>-mb2 { margin-bottom: var(--space-2) }
+	.<%= size %>-ml2 { margin-left:   var(--space-2) }
+
+	.<%= size %>-m3  { margin:        var(--space-3) }
+	.<%= size %>-mt3 { margin-top:    var(--space-3) }
+	.<%= size %>-mr3 { margin-right:  var(--space-3) }
+	.<%= size %>-mb3 { margin-bottom: var(--space-3) }
+	.<%= size %>-ml3 { margin-left:   var(--space-3) }
+
+	.<%= size %>-m4  { margin:        var(--space-4) }
+	.<%= size %>-mt4 { margin-top:    var(--space-4) }
+	.<%= size %>-mr4 { margin-right:  var(--space-4) }
+	.<%= size %>-mb4 { margin-bottom: var(--space-4) }
+	.<%= size %>-ml4 { margin-left:   var(--space-4) }
+
+	.<%= size %>-mxnhalf {
+	  margin-left: -var(--space-half);
+	  margin-right: -var(--space-half);
+	}
+	.<%= size %>-mxn1 { margin-left: -var(--space-1); margin-right: -var(--space-1); }
+	.<%= size %>-mxn2 { margin-left: -var(--space-2); margin-right: -var(--space-2); }
+	.<%= size %>-mxn3 { margin-left: -var(--space-3); margin-right: -var(--space-3); }
+	.<%= size %>-mxn4 { margin-left: -var(--space-4); margin-right: -var(--space-4); }
+
+	.<%= size %>-mx-auto { margin-left: auto; margin-right: auto; }
+
+	.<%= size %>-pl0 { padding-left:0; }
+	.<%= size %>-pr0 { padding-left:0; }
+
+	.<%= size %>-p0  { padding:       0 }
+	.<%= size %>-py0 { padding-top:   0; padding-bottom: 0 }
+	.<%= size %>-px0 { padding-left:  0; padding-right:  0 }
+
+	.<%= size %>-phalf  { padding: var(--space-half) }
+	.<%= size %>-pyhalf { padding-top: var(--space-half);  padding-bottom: var(--space-half) }
+	.<%= size %>-pxhalf { padding-left: var(--space-half); padding-right: var(--space-half) }
+
+	.<%= size %>-p1  { padding:       var(--space-1) }
+	.<%= size %>-py1 { padding-top:   var(--space-1); padding-bottom: var(--space-1) }
+	.<%= size %>-px1 { padding-left:  var(--space-1); padding-right:  var(--space-1) }
+
+	.<%= size %>-pt1 { padding-top:  var(--space-1); }
+	.<%= size %>-pr1 { padding-right:  var(--space-1); }
+	.<%= size %>-pb1 { padding-bottom:  var(--space-1); }
+	.<%= size %>-pl1 { padding-left:  var(--space-1); }
+
+	.<%= size %>-p2  { padding:       var(--space-2) }
+	.<%= size %>-py2 { padding-top:   var(--space-2); padding-bottom: var(--space-2) }
+	.<%= size %>-px2 { padding-left:  var(--space-2); padding-right:  var(--space-2) }
+
+	.<%= size %>-pt2 { padding-top:  var(--space-2); }
+	.<%= size %>-pr2 { padding-right:  var(--space-2); }
+	.<%= size %>-pb2 { padding-bottom:  var(--space-2); }
+	.<%= size %>-pl2 { padding-left:  var(--space-2); }
+
+	.<%= size %>-p3  { padding:       var(--space-3) }
+	.<%= size %>-py3 { padding-top:   var(--space-3); padding-bottom: var(--space-3) }
+	.<%= size %>-px3 { padding-left:  var(--space-3); padding-right:  var(--space-3) }
+
+	.<%= size %>-pt3 { padding-top:  var(--space-3); }
+	.<%= size %>-pr3 { padding-right:  var(--space-3); }
+	.<%= size %>-pb3 { padding-bottom:  var(--space-3); }
+	.<%= size %>-pl3 { padding-left:  var(--space-3); }
+
+	.<%= size %>-p4  { padding:       var(--space-4) }
+	.<%= size %>-py4 { padding-top:   var(--space-4); padding-bottom: var(--space-4) }
+	.<%= size %>-px4 { padding-left:  var(--space-4); padding-right:  var(--space-4) }
+
+	.<%= size %>-pt4 { padding-top:  var(--space-4); }
+	.<%= size %>-pr4 { padding-right:  var(--space-4); }
+	.<%= size %>-pb4 { padding-bottom:  var(--space-4); }
+	.<%= size %>-pl4 { padding-left:  var(--space-4); }
+
+
+}
+<% end %>
