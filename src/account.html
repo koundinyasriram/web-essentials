@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Account - Wunderlist</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+  </head>
+  <body class="bg-true-white">
+    <div class="menubar bg-true-white full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing md-show-inline">
+        <a href="integrations.html" class="blue mr3">Pro</a>
+        <a href="my-integrations.html" class="light-gray mr1 md-mr2">Business</a>
+        <a href="integrations-apps.html" class="light-gray mr1 md-mr2">Public Lists</a>
+        <a href="integrations-about.html" class="light-gray mr1 md-mr2">Download</a>
+        <a href="integrations-about.html" class="light-gray mr1 md-mr2">Support</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <div class="clearfix">
+
+      <div class="col col-12">
+        <header class="px3 py2 bg-red true-white sticky">
+            <h3 class="m0 lighter">My Account</h3>
+        </header>
+        <div class="flex flex-stretch" style="background-color:#fdfdfd">
+          <div class="col col-12 sm-col-7 md-col-9">
+            <div class="col-9 mx-auto py3">
+              <h2 class="lighter blue mt0">Your Email Addresses</h2>
+              <p>
+                To make it easier to use Wunderlist at home and in the office, you can add <strong>different email addresses</strong> to your account here. Only your Primary email address will get notifications like Reminders and List invites.
+              </p>
+              <p>
+                Friends &amp; colleagues can share lists with you using your <strong>other email addresses.</strong> You can also use them to sign into Wunderlist too.
+              </p>
+              <div class="bg-true-white mt3 r2 border overflow-hidden semi-bold">
+                <div class="flex flex-center border-bottom p2">
+                  <div class="flex-auto">
+                    jarred@wunderlist.com
+                  </div>
+                  <div class="heavy blue h7 caps m0 line-height-0">Primary</div>
+                </div>
+                <div class="flex flex-center border-bottom p2">
+                  <div class="flex-auto">
+                    jarred.herald@gmail.com
+                  </div>
+                  <a class="wundercon icon-x medium light-gray hover-red pointer"></a>
+                </div>
+                <div class="flex flex-center p2">
+                  <input class="flex-auto field-simple flex-auto p0 py1 focus-sibling" placeholder="Add email address"/>
+                  <button class="bold true-white bg-blue border border-blue h7 py1 px2 r1 caps display-none show-on-sibling-focus">Add Email</button>
+                </div>
+              </div>
+            </div>
+            <!-- <%= render 'footer.html' %> -->
+          </div>
+          <ul class="m0 list-reset flex-column flex-first col col-12 sm-col-5 md-col-3 py3 border-box sidebar border-right bg-white">
+            <li class="py1 m0 px3 bold blue">
+              Email Addresses
+            </li>
+            <li class="py1 m0 px3">
+              Connected Accounts
+            </li>
+            <li class="py1 m0 px3">
+              Mail to Wunderlist
+            </li>
+            <li class="py1 m0 px3">
+              Authorized Apps
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

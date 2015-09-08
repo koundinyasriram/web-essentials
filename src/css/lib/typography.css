@@ -124,6 +124,7 @@ h6, .h6 { font-size: var(--h6) }
 
 .heavy    { font-weight: var(--heavy-font-weight) }
 .bold    { font-weight: var(--bold-font-weight) }
+.semi-bold    { font-weight: var(--semibold-font-weight) }
 .regular { font-weight: normal }
 .italic  { font-style: italic }
 .caps    { text-transform: uppercase; letter-spacing: .07rem; }

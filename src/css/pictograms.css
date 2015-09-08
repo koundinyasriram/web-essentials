@@ -48,6 +48,10 @@
   font-size: 2.75rem;
 }
 
+.wundercon.medium {
+  font-size: 1.875rem;
+}
+
 <% $data[:pictograms].each do |row| %>
 .icon-<%= row[0] %>:before {
   content: '<%= row[1] %>';

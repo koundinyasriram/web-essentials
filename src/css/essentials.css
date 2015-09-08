@@ -17,6 +17,7 @@
 @import './lib/layout';
 @import './lib/white-space';
 @import './lib/tables';
+@import './lib/flex';
 @import './lib/colors';
 @import './lib/backgrounds';
 @import './lib/animations';

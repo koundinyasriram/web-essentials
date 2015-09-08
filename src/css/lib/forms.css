@@ -82,6 +82,10 @@ textarea {
 
 }
 
+input.field-simple {
+  background-image:none
+}
+
 .field-simple:focus {
   outline: none;
 }
