@@ -2,6 +2,7 @@
 .flex { display: flex }
 
 .flex-column  { flex-direction: column }
+.flex-row  { flex-direction: row }
 .flex-wrap    { flex-wrap: wrap }
 
 .flex-center   { align-items: center }
@@ -9,6 +10,12 @@
 .flex-stretch  { align-items: stretch }
 .flex-start    { align-items: flex-start }
 .flex-end      { align-items: flex-end }
+
+.flex-content-center   { align-content: center }
+.flex-content-baseline { align-content: baseline }
+.flex-content-stretch  { align-content: stretch }
+.flex-content-start    { align-content: flex-start }
+.flex-content-end      { align-content: flex-end }
 
 .flex-justify  { justify-content: space-between }
 
