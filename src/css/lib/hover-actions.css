@@ -22,7 +22,12 @@ style_map = {
 .hover-parent:hover .<%=s%>-on-parent-hover {
   <%= style_map[s] %>;
 }
-.focus-sibling:focus + <%=s%>-on-sibling-focus {
-  <%= style_map[s] %>;
+.focus-parent:valid + .<%=s%>-on-parent-focus {
+  <%= style_map[s] %> !important;
+
 }
 <% end %>
+
+.focus-parent:invalid {
+  color:var(--dark-gray)
+}
