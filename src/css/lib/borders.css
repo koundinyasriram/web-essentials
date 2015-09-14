@@ -28,6 +28,51 @@
   border-left-color: var(--border-color);
 }
 
+.no-border {
+  border:none
+}
+
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
+
+  .<%= size %>-border {
+    border-style: solid;
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+  }
+
+  .<%= size %>-border-top {
+    border-top-style: solid;
+    border-top-width: var(--border-width);
+    border-top-color: var(--border-color);
+  }
+
+  .<%= size %>-border-right {
+    border-right-style: solid;
+    border-right-width: var(--border-width);
+    border-right-color: var(--border-color);
+  }
+
+  .<%= size %>-border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
+  }
+
+  .<%= size %>-border-left {
+    border-left-style: solid;
+    border-left-width: var(--border-width);
+    border-left-color: var(--border-color);
+  }
+
+  .<%= size %>-no-border {
+    border:none
+  }
+
+}
+<% end %>
+
+
 .rounded { border-radius: var(--border-radius) }
 .r1 { border-radius: 2px }
 .r2 { border-radius: 4px }

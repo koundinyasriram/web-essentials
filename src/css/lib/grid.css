@@ -15,6 +15,16 @@
   box-sizing: border-box;
 }
 
+<% [1,2,3,4,5,6,7,8,9,10,11].each do |num| %>
+  .max-width-<%= num %> {
+    max-width: var(--space-<%= num %>);
+  }
+  .min-width-<%= num %> {
+    min-width: var(--space-<%= num %>);
+  }
+<% end %>
+
+
 <% [1,2,3,4,5,6,7,8,9,10,11,12].each do |num| %>
 .col-<%= num %> {
   width: calc(<%= num %>/12 * 100%);
@@ -34,10 +44,23 @@
     box-sizing: border-box;
   }
 
+  .<%= size %>-width-auto {
+    width:auto;
+  }
+
   <% [1,2,3,4,5,6,7,8,9,10,11,12].each do |num| %>
   .<%= size %>-col-<%= num %> {
     width: calc(<%= num %>/12 * 100%);
   }
+  <% end %>
+
+  <% [1,2,3,4,5,6,7,8,9,10,11].each do |num| %>
+    .<%= size %>-max-width-<%= num %> {
+      max-width: var(--space-<%= num %>);
+    }
+    .<%= size %>-min-width-<%= num %> {
+      min-width: var(--space-<%= num %>);
+    }
   <% end %>
 
 }

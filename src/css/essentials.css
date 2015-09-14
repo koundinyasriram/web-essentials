@@ -17,9 +17,11 @@
 @import './lib/layout';
 @import './lib/white-space';
 @import './lib/tables';
+@import './lib/flex';
 @import './lib/colors';
 @import './lib/backgrounds';
 @import './lib/animations';
 @import './lib/general';
+@import './lib/filters';
 
 .outline-blue * { box-shadow: 0 0 0 1px rgba(var(--blue), .75) }
