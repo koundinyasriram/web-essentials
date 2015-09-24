@@ -168,3 +168,14 @@ h6, .h6 { font-size: var(--h6) }
 .break-word {
   word-wrap: break-word;
 }
+
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
+
+  .<%= size %>-center       { text-align: center }
+  .<%= size %>-left-align   { text-align: left }
+  .<%= size %>-right-align  { text-align: right }
+  .<%= size %>-justify      { text-align: justify }
+
+}
+<% end %>

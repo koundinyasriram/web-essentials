@@ -34,14 +34,15 @@
 .flex-first { order: -1 }
 .flex-last  { order: 99999 }
 
-@media (--breakpoint-sm) {
-  .sm-flex { display: flex }
-}
 
-@media (--breakpoint-md) {
-  .md-flex { display: flex }
-}
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
 
-@media (--breakpoint-lg) {
-  .lg-flex { display: flex }
+  .<%= size %>-flex { display: flex }
+  .<%= size %>-flex-column  { flex-direction: column }
+  .<%= size %>-flex-row  { flex-direction: row }
+  .<%= size %>-flex-wrap    { flex-wrap: wrap }
+
+
 }
+<% end %>
