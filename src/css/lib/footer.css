@@ -3,10 +3,6 @@ footer .container ul {
   width: calc(12/12 * 100%);
 }
 
-footer .container > div {
-  display:block;
-}
-
 footer .container .h5 {
   font-size: 17px;
   padding: var(--space-half) 0;
@@ -26,11 +22,6 @@ footer .container .h5 {
     width: auto;
     margin-right: var(--space-3);
   }
-
-  footer .container > div {
-    display:inline-block;
-  }
-
 
   footer .container .h5 {
     font-size: var(--h5);
