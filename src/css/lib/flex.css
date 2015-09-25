@@ -42,6 +42,11 @@
   .<%= size %>-flex-column  { flex-direction: column }
   .<%= size %>-flex-row  { flex-direction: row }
   .<%= size %>-flex-wrap    { flex-wrap: wrap }
+  .<%= size %>-flex-center   { align-items: center }
+  .<%= size %>-flex-baseline { align-items: baseline }
+  .<%= size %>-flex-stretch  { align-items: stretch }
+  .<%= size %>-flex-start    { align-items: flex-start }
+  .<%= size %>-flex-end      { align-items: flex-end }
 
 
 }
