@@ -15,7 +15,8 @@ body:before {
   color:white;
   top: 10px;
   left: 10px;
-  z-index: 10;
+  z-index: -100;
+
 }
 
 @media (--breakpoint-xsm) {
