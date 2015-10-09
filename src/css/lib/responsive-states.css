@@ -9,12 +9,14 @@
 }
 
 body:before {
-  position: absolute;
+  position: fixed;
   content: "tiny";
   background: red;
   color:white;
   top: 10px;
   left: 10px;
+  z-index: -100;
+
 }
 
 @media (--breakpoint-xsm) {

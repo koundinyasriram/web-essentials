@@ -32,6 +32,22 @@
   border:none
 }
 
+.no-border-left {
+  border-left:none
+}
+
+.no-border-top {
+  border-top:none
+}
+
+.no-border-right {
+  border-right:none
+}
+
+.no-border-bottom {
+  border-bottom:none
+}
+
 <% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
 @media (--breakpoint-<%= size %>) {
 
@@ -67,6 +83,22 @@
 
   .<%= size %>-no-border {
     border:none
+  }
+
+  .<%= size %>-no-border-left {
+    border-left:none
+  }
+
+  .<%= size %>-no-border-top {
+    border-top:none
+  }
+
+  .<%= size %>-no-border-right {
+    border-right:none
+  }
+
+  .<%= size %>-no-border-bottom {
+    border-bottom:none
   }
 
 }

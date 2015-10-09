@@ -9,6 +9,7 @@
 @import './lib/typography';
 @import './lib/buttons';
 @import './lib/menubar';
+@import './lib/footer';
 @import './lib/hover-actions';
 @import './lib/tabs';
 @import './lib/borders';

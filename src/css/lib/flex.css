@@ -34,14 +34,20 @@
 .flex-first { order: -1 }
 .flex-last  { order: 99999 }
 
-@media (--breakpoint-sm) {
-  .sm-flex { display: flex }
-}
 
-@media (--breakpoint-md) {
-  .md-flex { display: flex }
-}
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
 
-@media (--breakpoint-lg) {
-  .lg-flex { display: flex }
+  .<%= size %>-flex { display: flex }
+  .<%= size %>-flex-column  { flex-direction: column }
+  .<%= size %>-flex-row  { flex-direction: row }
+  .<%= size %>-flex-wrap    { flex-wrap: wrap }
+  .<%= size %>-flex-center   { align-items: center }
+  .<%= size %>-flex-baseline { align-items: baseline }
+  .<%= size %>-flex-stretch  { align-items: stretch }
+  .<%= size %>-flex-start    { align-items: flex-start }
+  .<%= size %>-flex-end      { align-items: flex-end }
+
+
 }
+<% end %>
