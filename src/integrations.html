@@ -23,214 +23,219 @@
       </nav>
       <%= render 'user.html' %>
     </div>
-    <header class="full-width white" style="background-color:#FF5C57;height:500px;">
-      <div class="container full-height md-table px2 border-box relative z2">
-        <div class="md-table-cell py4">
-          <div class="col-inline col-1 vt">
-            <img class="left md-table-cell inline-block drop-shadow round-square vt mr3" src="./images/integrations/sunrise.jpg" width="70px"/>
+    <header class="full-width overflow-hidden">
+      <div class="container flex flex-center flex-column full-width full-height px2 border-box relative z2" style="height:566px;">
+        <div class="flex flex-center center md-left-align full-height">
+          <div class="flex flex-auto flex-column md-flex-row px2 border-box">
+            <div class="flex-auto">
+              <h1 class="mt0 mb1 dark-gray lighter">Discover new ways to achieve more with Wunderlist</h1>
+              <p class="h4">We're commited to making Wunderlist the best to-do list in the world. Thats why we focus on building the best experience but there are many developers out there building freat experiences for Wunderlist.</p>
+            </div>
           </div>
-          <div class="col-inline col-6 px2 border-box">
-            <h1 class="mt0 mb1 lighter line-height-1">Sunrise</h1>
-            <p class="h4">Sunrise is a free calendar app specifically designed to make your life easier. All to-dos with a due date get synced to a calendar in Sunrise.</p>
-            <a class="button center bg-white inline-block" style="color:#FF5C57;">
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div class="absolute bottom-0 top-0 right-0 md-show" style="right:10px;">
-          <img class="left inline-block vt" src="//d2hkcehpyog59.cloudfront.net/234b07cb1a3bee199fb2f42afb2fc8332727300c/hero/sunrise@2x.png" height="500px" data-reactid=".2dedm8r0dmo.1.$sunrise.0.1.0">
+          <img class="md-show" src="./images/integrations/header-graphic.png" width="650px" style="margin-right:-190px; margin-top:-1px"/>
         </div>
       </div>
     </header>
-    <div class="container">
-      <div class="clearfix px2 py3 font-size-0">
-        <div class="col-inline col-8">
-          <h3 class="m0 lighter">All Integrations</h3>
+    <div class="border-top border-bottom">
+      <div class="container">
+        <div class="clearfix sm-flex flex-column px2 pt3">
+          <h3 class="m0 mb2 lighter center sm-left-align">
+            Featured Integrations
+          </h3>
+          <div class="flex sm-flex-row flex-wrap flex-justify full-width">
+            <div class="col-12 xsm-col-5 sm-col-2 px2 mb3 r4 flex flex-center bg-cover" style="background-image:url('./images/integrations/featured/sunrise-featured.jpg');height:120px;">
+              <div class="content center full-width bg-cover">
+              </div>
+            </div>
+
+            <div class="col-12 xsm-col-5 sm-col-2 px2 mb3 r4 flex flex-center bg-cover" style="background-image:url('./images/integrations/featured/slack-featured.jpg');height:120px;">
+              <div class="content center full-width bg-cover">
+              </div>
+            </div>
+
+            <div class="col-12 xsm-col-5 sm-col-2 px2 mb3 r4 flex flex-center bg-cover" style="background-image:url('./images/integrations/featured/zapier-featured.jpg');height:120px;">
+              <div class="content center full-width bg-cover">
+              </div>
+            </div>
+
+            <div class="col-12 xsm-col-5 sm-col-2 px2 mb3 r4 flex flex-center bg-cover" style="background-image:url('./images/integrations/featured/twitter-featured.jpg');height:120px;">
+              <div class="content center full-width bg-cover">
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="col-inline col-4">
+      </div>
+    </div>
+    <div class="container pb4 mt2">
+      <div class="clearfix sm-flex flex-center px2 py3 font-size-0">
+        <div class="flex-auto">
+          <h3 class="m0 lighter center sm-left-align">
+            All Integrations
+          </h3>
+        </div>
+        <div class="col-12 sm-col-4 mt2 sm-mt0">
           <input class="block full-width pill field-light border-box px2 m0" placeholder="Search for an integration"/>
         </div>
       </div>
-      <ul class="list-reset">
+      <ul class="list-reset sm-flex flex-column">
         <li class="px2 border-box">
-          <div class="clearfix border-top py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/bugsnag.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/bugsnag.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Bugsnag</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Adds all occuring errors to a Wunderlist.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Bugsnag</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Adds all occuring errors to a Wunderlist.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Add</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/evernote.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/twitter.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Evernote</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Create to-dos from your Evernote Notes.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
-            </div>
-          </div>
-        </li>
-        <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/twitter.png">
-            </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Favourite Tweets</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Adds all the tweets you favourite that have a link to Wunderlist.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Favourite Tweets</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Adds all the tweets you favourite that have a link to Wunderlist.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Add</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/github.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/github.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Github Issues</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Add all your GitHub issues from a repository to a Wunderlist.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
-            </div>
-          </div>
-        </li>
-        <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/gmail.png">
-            </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Gmail</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a><span class="ml1 disconnected inline-block"></span></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Add all your starred Gmail messages to Wunderlist.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Github Issues</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Add all your GitHub issues from a repository to a Wunderlist.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Add</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/habitrpg.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/hipchat.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">HabitRPG</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Get XP & Loot for doing work, lose HP for slacking.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
-            </div>
-          </div>
-        </li>
-        <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/hipchat.png">
-            </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">HipChat</span> by <a class="light-gray hover-blue" href="#">Atlassian</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Post notifications to a HipChat channel when you update and complete tasks in a selected list.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Learn More</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">HipChat</span> by <a class="light-gray hover-blue" href="#">Atlassian</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Post notifications to a HipChat channel when you update and complete tasks in a selected list.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Learn More</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/onenote.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/scanbot.png" />
             </div>
-            <div class="col-inline col-9 vm">
-              <h4 class="m0 light-gray title"><span class="bold gray">OneNote</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Sync all wunderlists to a dedicated section in OneNote.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
-            </div>
-          </div>
-        </li>
-        <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/scanbot.png">
-            </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Scanbot</span> by <a class="light-gray hover-blue" href="#">Doo</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Items scanned into Scanbot create tasks in Wunderlists that carry the scans as attachments.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Learn More</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Scanbot</span> by <a class="light-gray hover-blue" href="#">Doo</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Items scanned into Scanbot create tasks in Wunderlists that carry the scans as attachments.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Learn More</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/slack.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/slack.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Slack</span> by <a class="light-gray hover-blue" href="#">Slack</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Post notifications to a Slack channel when you update and complete tasks in a selected list.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Learn More</a>
-            </div>
-          </div>
-        </li>
-        <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/songkick.png">
-            </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Songkick</span> by <a class="light-gray hover-blue" href="#">Wunderlist</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Adds tracked artists and events to a Wunderlist.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Add</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Slack</span> by <a class="light-gray hover-blue" href="#">Slack</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Post notifications to a Slack channel when you update and complete tasks in a selected list
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Learn More</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-bottom border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/sunrise.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/sunrise.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Sunrise</span> by <a class="light-gray hover-blue" href="#">Microsoft Corporation</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">All to-dos with a due date get synced to a calendar in Sunrise.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Learn More</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Sunrise</span> by <a class="light-gray hover-blue" href="#">Microsoft Corporation</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  All to-dos with a due date get synced to a calendar in Sunrise.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Learn More</a>
+              </div>
             </div>
           </div>
         </li>
         <li class="px2 border-box">
-          <div class="clearfix py2 border-light-gray-blue font-size-0">
-            <div class="col-inline col-1 line-height-0">
-              <img class="r3" width="60" src="./images/integrations/zapier.png">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/zapier.png" />
             </div>
-            <div class="col-inline col-9">
-              <h4 class="m0 light-gray title"><span class="bold gray">Zapier</span> by <a class="light-gray hover-blue" href="#">Zapier</a></h4>
-              <p class="mb0 mr4 body-text-small light-gray">Create zaps and hook up other services already connected to Zapier Services.</p>
-            </div>
-            <div class="col-inline col-2">
-              <a class="button block center white">Learn More</a>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 light-gray title">
+                  <span class="bold gray">Zapier</span> by <a class="light-gray hover-blue" href="#">Zapier</a>
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  All to-dos with a due date get synced to a calendar in Sunrise.
+                </p>
+              </div>
+              <div class="col-12 sm-col-2 mt2 sm-mt0">
+                <a class="button block center white">Learn More</a>
+              </div>
             </div>
           </div>
         </li>
