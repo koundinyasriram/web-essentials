@@ -1,0 +1,44 @@
+@import './lib/variables';
+
+body:before {
+  position: fixed;
+  content: "tiny";
+  background: black;
+  font-weight: bold;
+  color:white;
+  top: 0;
+  left: 0;
+  padding: 5px 10px;
+  z-index: 999;
+  opacity: 0.5;
+}
+
+@media (--breakpoint-xsm) {
+  body:before {
+    content: "xsm";
+  }
+}
+
+@media (--breakpoint-sm) {
+  body:before {
+    content: "sm";
+  }
+}
+
+@media (--breakpoint-md) {
+  body:before {
+    content: "md";
+  }
+}
+
+@media (--breakpoint-lg) {
+  body:before {
+    content: "lg";
+  }
+}
+
+@media (--breakpoint-xlg) {
+  body:before {
+    content: "xlg";
+  }
+}
