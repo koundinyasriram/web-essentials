@@ -53,7 +53,7 @@
 
   --button-font-size: .75rem;
   --button-font-weight: var(--bold-font-weight);
-  --button-line-height: normal;
+  --button-line-height: 1rem;
   --button-padding-y: .9rem;
   --button-padding-x: 1rem;
   --button-small-padding-y: .25rem;
