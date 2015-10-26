@@ -12,6 +12,7 @@ button,
   font-size: var(--button-font-size);
   line-height: var(--button-line-height);
   padding: var(--button-padding-y) var(--button-padding-x) calc(var(--button-padding-y) - 2px);
+  white-space: nowrap;
 }
 
 .small-button {

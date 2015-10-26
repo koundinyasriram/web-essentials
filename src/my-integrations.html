@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>My Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="light-gray mr3">All Integrations</a>
+        <a href="my-integrations.html" class="blue mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <div class="container pb4 mt2">
+      <div class="clearfix sm-flex flex-center px2 py3">
+        <div class="flex-auto">
+          <h3 class="m0 lighter center sm-left-align">
+            All Integrations
+          </h3>
+        </div>
+        <div class="col-12 sm-col-4 mt2 sm-mt0">
+          <input class="block full-width pill field-light border-box px2 m0" placeholder="Search for an integration"/>
+        </div>
+      </div>
+      <ul class="list-reset sm-flex flex-column">
+        <li class="px2 border-box">
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue font-size-0">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/bugsnag.png" />
+            </div>
+            <div class="flex flex-column sm-flex-row flex-auto">
+              <div class="flex-auto">
+                <h4 class="m0 bold">
+                  Bugsnag
+                </h4>
+                <p class="mb0 mr0 sm-mr4 body-text-small light-gray">
+                  Adds all occuring errors to a Wunderlist.
+                </p>
+              </div>
+              <a class="px3 button center bg-lightest-gray gray  mt2 sm-mt0">Edit</a>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="px2 border-box">
+
+          <div class="flex flex-start sm-flex-center clearfix py2 border-top border-light-gray-blue">
+            <div class="pr2 line-height-0">
+              <img class="r3 max-width-3 sm-max-width-4" width="60px" src="./images/integrations/github.png" />
+            </div>
+            <div class="flex flex-center">
+              <div class="flex-auto">
+                <h4 class="m0 bold">
+                  Github Issues
+                </h4>
+                <p class="mb0 mr0 sm-mr3 body-text-small light-gray black">
+                  We're commited to making Wunderlist the best to-do list in the world. Thats why we focus on building the best experience but there are many developers out there building freat experiences for Wunderlist.
+                </p>
+              </div>
+              <a class="px3 button center bg-lightest-gray gray  mt2 sm-mt0">4 Configured</a>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="pr2 line-height-0 max-width-3 sm-max-width-4" style="width:60px">
+            </div>
+            <div class="flex flex-column full-width">
+              <ul class="list-reset flex-auto">
+                <li class="flex flex-center rounded border-box bg-white border py1 px2 border-lighest-gray mb1">
+                  <div class="flex flex-column flex-auto">
+                    <a href="#" class="m0 gray hover-blue">Issues are saved from <span class="bold">website</span> in the list <span class="blue">New Website Issues</span></a>
+                    <p class="m0 h5 light-gray">Added March 16th, 2015</p>
+                  </div>
+                  <a href="twitter.html" class="wundercon icon-back h-flip gray hover-blue"></a>
+                </li>
+                <li class="flex flex-center rounded border-box bg-white border py1 px2 border-lighest-gray">
+                  <div class="flex flex-column flex-auto">
+                    <a href="#" class="m0 gray hover-blue">Issues are saved from <span class="bold">website</span> in the list <span class="blue">New Website Issues</span></a>
+                    <p class="m0 h5 light-gray">Added March 16th, 2015</p>
+                  </div>
+                  <a href="twitter.html" class="wundercon icon-back h-flip gray hover-blue"></a>
+                </li>
+              </ul>
+              <div class="clearfix">
+                <a class="block sm-right px3 min-width-5 button center white">Add New</a>
+              </div>
+            </div>
+          </div>
+
+
+        </li>
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <%= render 'footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

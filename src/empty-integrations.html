@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Wunderlist Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="blue mr3">All Integrations</a>
+        <a href="my-integrations.html" class="light-gray mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <header class="full-width white" style="background-color:#FF5C57;height:500px;">
+      <div class="container full-height md-table px2 border-box relative z2">
+        <div class="md-table-cell py4">
+          <div class="col-inline col-1 vt">
+            <img class="left md-table-cell inline-block drop-shadow round-square vt mr3" src="./images/integrations/sunrise.jpg" width="70px"/>
+          </div>
+          <div class="col-inline col-6 px2 border-box">
+            <h1 class="mt0 mb1 lighter line-height-1">Sunrise</h1>
+            <p class="h4">Sunrise is a free calendar app specifically designed to make your life easier. All to-dos with a due date get synced to a calendar in Sunrise.</p>
+            <a class="button center bg-white inline-block" style="color:#FF5C57;">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="absolute bottom-0 top-0 right-0 md-show" style="right:10px;">
+          <img class="left inline-block vt" src="//d2hkcehpyog59.cloudfront.net/234b07cb1a3bee199fb2f42afb2fc8332727300c/hero/sunrise@2x.png" height="500px" data-reactid=".2dedm8r0dmo.1.$sunrise.0.1.0">
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="clearfix px2 py3 font-size-0">
+        <div class="col-inline col-8">
+          <h3 class="m0 lighter">All Integrations</h3>
+        </div>
+        <div class="col-inline col-4">
+          <input class="block full-width pill field-light border-box px2 m0" placeholder="Search for an integration"/>
+        </div>
+      </div>
+      <div class="center py4 border-top">
+        <div class="wundercon big icon-search"></div>
+        <h4 class="bold">No search results</h4>
+        <p>Unfortunitly the integrations you're looking for doesn't exist</p>
+      </div>
+    </div>
+    <%= render 'footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -47,3 +47,12 @@
   position: -o-sticky;
 }
 
+<% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
+@media (--breakpoint-<%= size %>) {
+
+  .<%= size %>-left  { float: left }
+  .<%= size %>-right { float: right }
+  .<%= size %>-no-float { float: none; }
+
+}
+<% end %>

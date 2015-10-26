@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>My Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="light-gray mr3">All Integrations</a>
+        <a href="my-integrations.html" class="blue mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <div class="container pb4">
+      <div class="font-size-0 py3 px2 border-box">
+        <div class="col-inline col-8">
+          <h3 class="m0 lighter">My Integrations</h3>
+        </div>
+        <div class="col-inline col-4">
+          <input class="block full-width pill field-light border-box px2 m0" disabled placeholder="Search for an integration"/>
+        </div>
+      </div>
+      <div class="center py4 border-top">
+        <img class="mb2" src="./images/integrations/all-integrations.png" width="421">
+        <h4 class="bold">No Integrations</h4>
+        <p>It seems you haven't added any integrations yet.<br>Click the button below to add some.</p>
+        <a class="button">Add an Integration</a>
+      </div>
+    </div>
+    <%= render 'footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

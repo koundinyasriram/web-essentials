@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="body-full-height">
+  <head>
+    <meta charset="utf-8">
+    <title>Slack - Wunderlist Integrations</title>
+    <meta title="description" content="">
+    <meta title="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/essentials.min.css">
+    <link rel="stylesheet" href="css/pictograms.min.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="menubar bg-true-white border-bottom full-width z4 border-box p2 font-size-0">
+      <div class="icon inline-block vm"></div>
+      <div class="ml1 mr3 logo inline-block vm"></div>
+      <nav class="inline-block h6 bold vm nowrap uppercase letter-spacing">
+        <a href="integrations.html" class="light-gray mr3">All Integrations</a>
+        <a href="my-integrations.html" class="blue mr3">My Integrations</a>
+        <a href="integrations-apps.html" class="light-gray mr3">Apps</a>
+        <a href="integrations-about.html" class="light-gray mr3">About</a>
+      </nav>
+      <%= render 'user.html' %>
+    </div>
+    <div class="container px2 py3 border-box">
+      <div class="font-size-0">
+        <div class="col-inline col-10 border-box">
+          <img class="r3 md-table-cell inline-block m0" width="60" src="./images/integrations/slack.png">
+          <div class="inline-block pl2 vm">
+            <h2 class="m0 lighter">Slack</h2>
+            <p class="m0 muted">Created by Slack Technologies, Inc.</p>
+          </div>
+        </div>
+        <div class="col-inline col-2 center">
+          <a class="button center block">Add</a>
+        </div>
+      </div>
+      <div class="py3 border-bottom clearfix">
+        <h4 class="mt1 bold">Description</h4>
+        <div class="col col-4 light-gray">
+          <p>Here's a quick overiew of what this integration will allow you to do.</p>
+        </div>
+        <div class="col col-7 right">
+          <p>This integration will post notifications into a Slack channel when you update and complete to-dos in a selected list.</p>
+          <p><strong>What is Slack?</strong> Slack is real-time messaging, archiving and search for teams.</p>
+        </div>
+      </div>
+      <div class="py3 clearfix">
+        <h4 class="mt1 bold">Connecting to Slack</h4>
+        <div class="col col-4">
+          <p class="light-gray">Here's a quick guide on how to set up your Slack integration</p>
+        </div>
+        <div class="col col-7 right">
+          <ol class="p0">
+            <li>
+              Sign into your Slack account and go to <a href="">https://slack.com/integrations</a>.
+            </li>
+            <li>
+              Look for "Wunderlist" inside the list of "All Integrations" and click on "Add" on the right side.
+            </li>
+            <li>
+              Select or create a Slack channel and click on "Add Wunderlist Integration".
+            </li>
+            <li>
+              In the next step please  "Authenticate with Wunderlist" and sign into your Wunderlist account (This has to be done once).
+            </li>
+            <li>
+              Choose a list from your Wunderlist and click on "Save Integration".
+            </li>
+          </ol>
+          <p><strong>Where do I go for support?</strong> <a href="">Visit Slack Support</a></p>
+        </div>
+      </div>
+    </div>
+    <%= render 'developer/footer.html' %>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
