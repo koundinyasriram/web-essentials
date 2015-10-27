@@ -24,7 +24,7 @@
  */
 
 .flex-auto {
-  flex: 1 1 auto;
+  flex: 1 1 1px;
   min-width: 0; /* 1 */
   min-height: 0; /* 1 */
 }
@@ -47,6 +47,11 @@
   .<%= size %>-flex-stretch  { align-items: stretch }
   .<%= size %>-flex-start    { align-items: flex-start }
   .<%= size %>-flex-end      { align-items: flex-end }
+  .<%= size %>-flex-auto {
+    flex: 1 1 1px;
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+  }
 
 
 }
