@@ -53,6 +53,10 @@
   .<%= size %>-left  { float: left }
   .<%= size %>-right { float: right }
   .<%= size %>-no-float { float: none; }
+  .<%= size %>-inline       { display: inline }
+  .<%= size %>-block        { display: block }
+  .<%= size %>-inline-block { display: inline-block }
+  .<%= size %>-border-box   { box-sizing: border-box }
 
 }
 <% end %>
