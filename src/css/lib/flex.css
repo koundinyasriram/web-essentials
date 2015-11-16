@@ -18,6 +18,7 @@
 .flex-content-end      { align-content: flex-end }
 
 .flex-justify  { justify-content: space-between }
+.flex-justify-center  { justify-content: center}
 
 /*
  * 1. Fix for Chrome 44 bug. https://code.google.com/p/chromium/issues/detail?id=506893
