@@ -2,15 +2,15 @@
 <html class="body-full-height">
   <head>
     <meta charset="utf-8">
-    <title>Mail to Wunderlist - Wunderlist</title>
+    <title>My Account - Wunderlist</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/essentials.min.css">
     <link rel="stylesheet" href="css/pictograms.min.css">
     <link rel="stylesheet" href="css/helpers.min.css">
   </head>
-  <body class="bg-true-white full-height" style="background-color:#fdfdfd">
+  <body style="background-color:#fdfdfd">
+    <div class="flex flex-column" style="min-height: 100vh">
 
-    <div class="clearfix flex flex-column flex-stretch flex-content-streatch full-height">
       <div class="menubar flex-none bg-true-white full-width z4 border-box p2 font-size-0">
         <div class="icon inline-block vm"></div>
         <div class="ml1 mr3 logo inline-block vm"></div>
@@ -23,43 +23,44 @@
         </nav>
         <%= render 'user.html' %>
       </div>
+
       <header class="px3 sm-px2 md-px3 py2 bg-red true-white sticky">
         <h3 class="m0 lighter">My Account</h3>
       </header>
 
-      <div class="flex-auto sm-flex">
-        <aside class="flex-first flex-auto overflow-auto col-12 sm-col-5 xlg-col-3 px3 sm-px2 md-px3 py2 sm-py3 border-box border-bottom sm-border-right bg-white md-max-width-6 xlg-max-width-7 sm-min-width-5">
-          <nav class="overflow-auto flex-auto">
+      <div class="sm-flex flex-auto">
+        <aside class="bg-white col-12 sm-col-4 md-col-3 xlg-max-width-7 sm-min-width-5 sm-border-right border-bottom border-box">
+          <nav class="py2 sm-py3 px2 md-px3">
             <ul class="sm-show list-reset">
-              <li class="py1"><a href="my-account" class=" dark-gray block">Email Addresses</a></li>
-              <li class="py1"><a href="connected-accounts" class=" dark-gray block">Connected Accounts</a></li>
-              <li class="py1"><a href="mail-top-wunderlist" class=" bold block">Mail to Wunderlist</a></li>
+              <li class="py1">
+                <a href="my-account" class="dark-gray">Email Addresses</a>
+              </li>
+              <li class="py1">
+                <a href="connected-accounts" class="dark-gray">Connected Accounts</a>
+              </li>
+              <li class="py1"><a href="mail-to-wunderlist" class="bold">Mail to Wunderlist</a></li>
               <li class="py1"><a href="#" class=" dark-gray block">Authorized Apps</a></li>
             </ul>
-            <select class="sm-hide relative flex-auto field-simple h4 p0 full-width bg-white line-height-1">
-              <option class="py1"><a href="#" class="dark-gray block">Email Addresses</a></option>
-              <option class="py1"><a href="#" class="dark-gray block">Connected Accounts</a></option>
-              <option class="py1"><a href="#" class="bold block">Mail to Wunderlist</a></option>
-              <option class="py1"><a href="#" class="dark-gray block">Authorized Apps</a></option>
+            <select class="sm-hide relative flex-auto field-simple h4 p0 full-width line-height-1 bg-white px2">
+              <option class="py1"><a href="my-account" class=" bold block">Email Addresses</a></option>
+              <option class="py1"><a href="connected-accounts" class=" dark-gray block">Connected Accounts</a></option>
+              <option class="py1"><a href="mail-to-wunderlist" class=" dark-gray block">Mail to Wunderlist</a></option>
+              <option class="py1"><a href="#" class=" dark-gray block">Authorized Apps</a></option>
             </select>
           </nav>
         </aside>
-        <main class="flex-auto overflow-auto col-12 p3 border-box dark-gray font-size-0">
-          <div class="col-12 sm-col-11 p0 lg-px4 xlg-max-width-11 mx-auto font-size-0 border-box">
+        <main class="flex-auto col-12 border-box dark-gray">
+          <div class="col-12 sm-col-11 md-col-10 lg-col-9 xlg-col-8 xlg-max-width-9 mx-auto p3 border-box">
             <h2 class="lighter blue mt0">Mail to Wunderlist</h2>
-            <div class="col-inline col-12 xlg-col-6 vt xlg-pr4">
-              <p>
-                You can turn emails into to-dos in Wunderlist, by forwarding them to me@wunderlist.com with the addresses listed here. To add more, click here. You can also choose which list each to-do lands in on the right.
-              </p>
-              <p>
-                Friends &amp; colleagues can share lists with you using your <strong>other email addresses.</strong> You can also use them to sign into Wunderlist too.
-              </p>
-            </div>
-
-            <ul class="list-reset col-inline col-12 xlg-col-6 semi-bold overflow-hidden border bg-true-white mt2 xlg-mt0">
-
+            <p>
+              You can turn emails into to-dos in Wunderlist, by forwarding them to me@wunderlist.com with the addresses listed here. To add more, click here. You can also choose which list each to-do lands in on the right.
+            </p>
+            <p>
+              Friends &amp; colleagues can share lists with you using your <strong>other email addresses.</strong> You can also use them to sign into Wunderlist too.
+            </p>
+            <ul class="overflow-hidden list-reset overflow-hidden border bg-true-white mt3">
               <li class="flex flex-center border-bottom p2 bg-white dark-gray">
-                <p class="flex-auto m0">
+                <p class="flex-auto m0 bold">
                   Enable Mail to Wunderlist
                 </p>
                 <div class="toggle-switch">
@@ -68,33 +69,36 @@
                 </div>
               </li>
               <li class="sm-flex flex-center border-bottom p2">
-                <p class="flex-auto m0 break-word pr2 gray">
-                  me.135235144eea787189c59d299af7155e@wunderlist.com
+                <p class="flex-auto m0 break-word h5 gray">
+                  This is a list of email addreses associated with Wunderlist account.
                 </p>
+              </li>
+              <li class="sm-flex flex-center border-bottom p2">
+                <div class="flex-auto m0 break-word pr2">
+                  <p class="m0 semi-bold">Mailbox 1</p>
+                </div>
                 <select class="field-light full-width sm-max-width-5 min-width-5 m0 mt2 sm-mt0">
                   <option class="py1"><a href="#" class="dark-gray block">Inbox</a></option>
                 </select>
                 <a class="sm-show ml2 wundercon icon-x medium true-white"></a>
               </li>
               <li class="sm-flex flex-center border-bottom p2">
-                <p class="flex-auto m0 break-word pr2 gray">
-                  me.148593485edd9584930c38429485a85e@wunderlist.com
-                </p>
+                <div class="flex-auto m0 break-word pr2">
+                  <p class="m0 semi-bold">Mailbox 2</p>
+                </div>
                 <select class="field-light full-width sm-max-width-5 min-width-5 m0 mt2 sm-mt0">
-                  <option class="py1"><a href="#" class="dark-gray block">Inbox</a></option>
+                  <option class="py1"><a href="#" class="dark-gray block">Groceries</a></option>
                 </select>
                 <a class="sm-show ml2 wundercon icon-x medium light-gray hover-red pointer"></a>
               </li>
-              <li class="flex flex-center p2">
-                <button class="sm-show small-button">Generate New Email</button>
-                <button class="sm-hide button full-width">Generate New Email</button>
+              <li class="flex flex-center flex-justify-center blue">
+                <a href="#" class="block flex flex-center p2">
+                  <span class="inline-block mr1 wundercon icon-plus-small small hover-red pointer"></span><span>Create New Mailbox</span>
+                </a>
               </li>
             </ul>
-            <p class="col-inline col-12 xlg-col-6 vt xlg-pr4 h5 light-gray">
-              Tip: Before forwarding your email, add words like ‘Tomorrow’ or ‘Next Week’ to the subject line to trigger Smart Due Dates. With a little Wunderlist magic, a Due Date will be automatically added to your new to-do.
-            </p>
-            <div class="flex flex-center list-reset col-inline col-12 xlg-col-6 r2 overflow-hidden border mt2 xlg-mt0 p2">
-              <div class="flex-auto pr3">
+            <div class="flex flex-center list-reset r2 overflow-hidden border mt3 p2">
+              <div class="flex-auto pr3 dark-gray">
                 <p class="bold mb0">Download Your Wunderlist Email Addresses</h4>
                 <p class="mb0">
                   Easily add your Wunderlist email address to your contact so you can easily access them when setting to-dos to Wunderlist.
@@ -103,12 +107,39 @@
               <button class="button">Download</button>
             </div>
           </div>
+          <footer class="border-top border-box">
+            <div class="col-12 sm-col-11 md-col-10 lg-col-9 xlg-col-8 xlg-max-width-9 mx-auto px3 py4 border-box">
+              <div class="md-flex">
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Product</li>
+                  <li><a class="hover-blue gray" href="#">Wunderlist</a></li>
+                  <li><a class="hover-blue gray" href="#">Download</a></li>
+                  <li><a class="hover-blue gray" href="#">Account</a></li>
+                  <li><a class="hover-blue gray" href="#">Integrations</a></li>
+                  <li><a class="hover-blue gray" href="#">Developer</a></li>
+                </ul>
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Company</li>
+                  <li><a class="hover-blue gray" href="#">About</a></li>
+                  <li><a class="hover-blue gray" href="#">Our Blog</a></li>
+                  <li><a class="hover-blue gray" href="#">Careers</a></li>
+                  <li><a class="hover-blue gray" href="#">Contact</a></li>
+                  <li><a class="hover-blue gray" href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Support</li>
+                  <li><a class="hover-blue gray" href="#">Help</a></li>
+                  <li><a class="hover-blue gray" href="#">Knowledge Base</a></li>
+                  <li><a class="hover-blue gray" href="#">Forum</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </main>
 
       </div>
 
     </div>
 
-    <script src="js/app.min.js"></script>
   </body>
 </html>

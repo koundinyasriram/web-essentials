@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/pictograms.min.css">
     <link rel="stylesheet" href="css/helpers.min.css">
   </head>
-  <body class="bg-true-white full-height" style="background-color:#fdfdfd">
-
-    <div class="clearfix flex flex-column">
+  <body style="background-color:#fdfdfd">
+    <div class="flex flex-column" style="min-height: 100vh">
 
       <div class="menubar flex-none bg-true-white full-width z4 border-box p2 font-size-0">
         <div class="icon inline-block vm"></div>
@@ -29,25 +28,29 @@
         <h3 class="m0 lighter">My Account</h3>
       </header>
 
-      <div class="flex-auto sm-flex">
-        <aside class="flex-auto overflow-auto col-12 sm-col-5 xlg-col-3 px3 sm-px2 md-px3 py2 sm-py3 border-box sm-border-right border-bottom sm-no-border-bottom md-max-width-6 xlg-max-width-7 sm-min-width-5">
-          <nav class="overflow-auto flex-auto">
+      <div class="sm-flex flex-auto">
+        <aside class="bg-white col-12 sm-col-4 md-col-3 xlg-max-width-7 sm-min-width-5 sm-border-right border-bottom border-box">
+          <nav class="py2 sm-py3 px2 md-px3">
             <ul class="sm-show list-reset">
-              <li class="py1"><a href="my-account" class=" bold block">Email Addresses</a></li>
-              <li class="py1"><a href="connected-accounts" class=" dark-gray block">Connected Accounts</a></li>
+              <li class="py1">
+                <a href="my-account" class="bold">Email Addresses</a>
+              </li>
+              <li class="py1">
+                <a href="connected-accounts" class="dark-gray">Connected Accounts</a>
+              </li>
               <li class="py1"><a href="mail-to-wunderlist" class=" dark-gray block">Mail to Wunderlist</a></li>
               <li class="py1"><a href="#" class=" dark-gray block">Authorized Apps</a></li>
             </ul>
-            <select class="sm-hide relative flex-auto field-simple h4 p0 full-width line-height-1" style="background-color:#fdfdfd">
-              <option class="py1"><a href="my-account" class=" bold block">Email Addresses</a></option>
+            <select class="sm-hide relative flex-auto field-simple h4 p0 full-width line-height-1 bg-white px2">
+              <option class="py1"><a href="my-account" class="bold block">Email Addresses</a></option>
               <option class="py1"><a href="connected-accounts" class=" dark-gray block">Connected Accounts</a></option>
               <option class="py1"><a href="mail-to-wunderlist" class=" dark-gray block">Mail to Wunderlist</a></option>
               <option class="py1"><a href="#" class=" dark-gray block">Authorized Apps</a></option>
             </select>
           </nav>
         </aside>
-        <main class="flex-auto overflow-auto col-12 py3 border-box dark-gray font-size-0">
-          <div class="col-12 sm-col-11 p0 lg-px4 lg-max-width-10 mx-auto font-size-0 border-box px3 pb3">
+        <main class="flex-auto col-12 border-box dark-gray">
+          <div class="col-12 sm-col-11 md-col-10 lg-col-9 xlg-col-8 xlg-max-width-9 mx-auto p3 border-box">
             <h2 class="lighter blue mt0">Your Email Addresses</h2>
               <p>
                 To make it easier to use Wunderlist at home and in the office, you can add <strong>different email addresses</strong> to your account here. Only your Primary email address will get notifications like Reminders and List invites.
@@ -86,49 +89,39 @@
               </li>
             </ul>
           </div>
+          <footer class="border-top border-box">
+            <div class="col-12 sm-col-11 md-col-10 lg-col-9 xlg-col-8 xlg-max-width-9 mx-auto px3 py4 border-box">
+              <div class="md-flex">
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Product</li>
+                  <li><a class="hover-blue gray" href="#">Wunderlist</a></li>
+                  <li><a class="hover-blue gray" href="#">Download</a></li>
+                  <li><a class="hover-blue gray" href="#">Account</a></li>
+                  <li><a class="hover-blue gray" href="#">Integrations</a></li>
+                  <li><a class="hover-blue gray" href="#">Developer</a></li>
+                </ul>
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Company</li>
+                  <li><a class="hover-blue gray" href="#">About</a></li>
+                  <li><a class="hover-blue gray" href="#">Our Blog</a></li>
+                  <li><a class="hover-blue gray" href="#">Careers</a></li>
+                  <li><a class="hover-blue gray" href="#">Contact</a></li>
+                  <li><a class="hover-blue gray" href="#">Privacy Policy</a></li>
+                </ul>
+                <ul class="list-reset col-12">
+                  <li class="bold dark-gray">Support</li>
+                  <li><a class="hover-blue gray" href="#">Help</a></li>
+                  <li><a class="hover-blue gray" href="#">Knowledge Base</a></li>
+                  <li><a class="hover-blue gray" href="#">Forum</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </main>
+
       </div>
-      <footer class="no-flex border-top py3 px3 border-box clearfix">
-        <div class="container">
-          <div class="font-size-0">
-
-          <ul class="inline-block list-reset vt col-12">
-            <li class="h5 bold mbhalf">Products</li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Wunderlist</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Wunderlist for Work</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Wunderlist Discover</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Integrations</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Developer</a></li>
-          </ul>
-          <ul class="inline-block list-reset vt col-12">
-            <li class="h5 bold mbhalf">About</li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Company Info</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Careers</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Contact</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Terms of Use</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Privacy Policy</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Legal Information</a></li>
-          </ul>
-          <ul class="inline-block list-reset vt col-12">
-            <li class="h5 bold mbhalf">Support</li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Support Home</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Knowledge Base</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Forum</a></li>
-          </ul>
-          <ul class="inline-block list-reset vt col-12">
-            <li class="h5 bold mbhalf">Community</li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Blog</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Twitter</a></li>
-            <li class="h5"><a class="hover-blue light-gray" href="#">Facebook</a></li>
-          </ul>
-          </div>
-
-          <div class="copyright">
-            <p class="h5 light-gray"><a href="#" class="light-gray hover-blue">Wunderlist</a> &copy; 2015</p>
-          </div>
-        </div>
-      </footer>
 
     </div>
+
   </body>
 </html>

@@ -45,6 +45,7 @@
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
+  position: sticky;
 }
 
 <% ["xsm", "sm", "md", "lg", "xlg"].each do |size| %>
